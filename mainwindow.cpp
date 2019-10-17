@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     MainWindow::arme = 2;
     for(int i = 0; i<5;i++){
         for(int j = 0;j<23;j++)
-            MainWindow::tableau[i][j] = MainWindow::tranchantes[i][j];
+            MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::tranchantes[i][j]);
     }
 }
 
@@ -272,31 +272,31 @@ void MainWindow::do_result()
         break;
     case 4:
         if(ui->spinBox->value() < 3)
-          step = 0;
+            step = 0;
         else step = 1;
         break;
     case 5:
         if(ui->spinBox->value() < 3)
-          step = 0;
+            step = 0;
         else step = 1;
         break;
     case 6:
         applieddice = ui->spinBox->value() + ui->spinBox_2->value();
         switch(ui->comboBox_8->currentIndex()){
         case 0:
-          applieddice -= 30;
-          break;
+            applieddice -= 30;
+            break;
         case 1:
-          applieddice -= 15;
-          break;
+            applieddice -= 15;
+            break;
         case 3:
-          applieddice += 10 ;
-          break;
+            applieddice += 10 ;
+            break;
         case 4:
-          applieddice += 20;
-          break;
+            applieddice += 20;
+            break;
         default:
-          break;
+            break;
         }
         if(ui->spinBox_4->value() == 0)
             applieddice += 30;
@@ -310,39 +310,40 @@ void MainWindow::do_result()
             applieddice -= 30;
 
         switch(ui->treeWidget->currentIndex().row()){
-          case 0:
+        case 0:
             if(ui->spinBox->value() < 3)
-              step = 0;
+                step = 0;
             else step = 1;
             break;
-          case 1:
+        case 1:
             if(ui->spinBox->value() < 5)
               step = 0;
             else step = 1;
             break;
-          case 2:
+        case 2:
             if(ui->spinBox->value() < 3)
-              step = 0;
+                step = 0;
             else step = 1;
             break;
-          case 3:
+        case 3:
             if(ui->spinBox->value() < 3)
-              step = 0;
+                step = 0;
             else step = 1;
             break;
-          case 4:
+        case 4:
             if(ui->spinBox->value() < 3)
-              step = 0;
+                step = 0;
             else step = 1;
             break;
-          case 5:
+        case 5:
             if(ui->spinBox->value() < 3)
-              step = 0;
+                step = 0;
             else step = 1;
             break;
           default:
             break;
-          }
+        }
+    break;
     default:
         break;
     }
@@ -396,55 +397,55 @@ void MainWindow::do_result()
         if(AttackIndex == 4)
         {
             if(step < 4)
-              step = 1;
+                step = 1;
             else step -= 2;
             switch (ui->comboBox_5->currentIndex()) {
-              case 0:
+            case 0:
                 if(step > 9)
-                  step = 9;
-                  break;
-              case 1:
+                    step = 9;
+                    break;
+            case 1:
                 if(step > 13)
-                  step = 13;
-                  break;
-              case 2:
+                    step = 13;
+                    break;
+            case 2:
                 if(step > 16)
-                  step = 16;
-                  break;
-              case 3:
+                    step = 16;
+                    break;
+            case 3:
                 if(step > 19)
-                  step = 19;
-                  break;
-              default:
+                    step = 19;
+                    break;
+            default:
                  break;
-              }
+            }
         }
         if(AttackIndex == 5)
         {
             if(step < 6)
-              step = 1;
+                step = 1;
             else step -= 4;
             switch (ui->comboBox_5->currentIndex())
-              {
-              case 0:
+            {
+            case 0:
                 if(step > 7)
-                  step = 7;
-                break;
-              case 1:
+                    step = 7;
+                    break;
+            case 1:
                 if(step > 11)
-                  step = 11;
-                break;
-              case 2:
+                    step = 11;
+                    break;
+            case 2:
                 if(step > 14)
-                  step = 14;
-                  break;
-              case 3:
+                    step = 14;
+                    break;
+            case 3:
                 if(step > 17)
-                  step = 17;
+                    step = 17;
+                    break;
+            default:
                 break;
-              default:
-                break;
-              }
+            }
         }
         if(AttackIndex == 6)
         {
@@ -588,7 +589,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->checkBox_2->setEnabled(false);
         for(int i = 0; i<5;i++){
             for(int j = 0;j<23;j++)
-                MainWindow::tableau[i][j] = MainWindow::tranchantes[i][j];
+                MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::tranchantes[i][j]);
         }
         MainWindow::AttackIndex = 0;
         switch (index.row()) {
@@ -641,7 +642,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->checkBox_2->setEnabled(false);
         for(int i = 0; i<5;i++){
             for(int j = 0;j<25;j++)
-                MainWindow::tableau[i][j] = MainWindow::contendantes[i][j];
+                MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::contendantes[i][j]);
         }
         MainWindow::AttackIndex = 1;
         switch (index.row()) {
@@ -690,7 +691,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
 
         for(int i = 0; i<5;i++){
             for(int j = 0;j<21;j++)
-                MainWindow::tableau[i][j] = MainWindow::deuxmain[i][j];
+                MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::deuxmain[i][j]);
         }
         MainWindow::AttackIndex = 2;
         switch (index.row()) {
@@ -730,7 +731,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->spinBox_4->setEnabled(true);
         for(int i = 0; i<5;i++){
             for(int j = 0;j<18;j++)
-                MainWindow::tableau[i][j] = MainWindow::projectiles[i][j];
+                MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::projectiles[i][j]);
         }
         MainWindow::AttackIndex = 3;
         ui->checkBox->setEnabled(false);
@@ -793,13 +794,13 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
             break;
         }
         break;
-      case 4:
+    case 4:
         ui->groupBox_6->setEnabled(true);
         ui->groupBox->setEnabled(true);
         MainWindow::AttackIndex = 4;
         for(int i = 0; i<5;i++){
             for(int j = 0;j<23;j++)
-                MainWindow::tableau[i][j] = MainWindow::morsures[i][j];
+                MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::morsures[i][j]);
         }
         ui->spinBox_5->setEnabled(true);
         ui->spinBox_5->setValue(0);
@@ -807,43 +808,44 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->comboBox_5->setEnabled(true);
         ui->checkBox->setEnabled(false);
         ui->checkBox_2->setEnabled(false);
+        ui->pushButton->setEnabled(true);
         ui->spinBox_4->setEnabled(false);
         switch(index.row()){
-          case 0:
+        case 0:
             ui->label_5->setText("Taille Contusion(si grd ou énorme)");
             break;
-          case 1:
+        case 1:
             ui->label_5->setText("Perforation Taille(C)");
             break;
-          case 2:
+        case 2:
             ui->label_5->setText("Taille Perforation(B, si grd ou énorme)");
             break;
-          case 3:
+        case 3:
             ui->label_5->setText("Perforation Contusion(C, si grd ou énorme)");
             break;
-          case 4:
+        case 4:
             ui->label_5->setText("Taille(T)");
             break;
-          case 5:
+        case 5:
             ui->label_5->setText("Contusion Contusion(si grd ou énorme)");
             break;
-          case 6:
+        case 6:
             ui->label_5->setText("Contusion Contusion(si grd ou énorme)");
             break;
-          case 7:
+        case 7:
             ui->label_5->setText("Déséquilibre(A)");
             break;
-          default:
+        default:
             break;
-          }
+        }
         break;
-      case 5:
+    case 5:
         ui->groupBox_6->setEnabled(true);
         ui->groupBox->setEnabled(true);
         MainWindow::AttackIndex = 5;
         for(int i = 0; i<5;i++){
             for(int j = 0;j<21;j++)
-                MainWindow::tableau[i][j] = MainWindow::saisies[i][j];
+                MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::saisies[i][j]);
         }
         ui->spinBox_5->setEnabled(true);
         ui->spinBox_5->setValue(0);
@@ -851,20 +853,23 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->comboBox_5->setEnabled(true);
         ui->checkBox->setEnabled(false);
         ui->checkBox_2->setEnabled(false);
+        ui->pushButton->setEnabled(true);
         ui->spinBox_4->setEnabled(false);
         switch(index.row()){
-          case 0:
+        case 0:
             ui->label_5->setText("Saisie Déséquilibre(C)");
             break;
-          case 1:
+        case 1:
             ui->label_5->setText("Déséquilibre Contusion(C, si grd ou énorme)");
             break;
-          case 2:
+        case 2:
             ui->label_5->setText("Saisie(A)");
             break;
-          }
+        default:
+            break;
+        }
         break;
-      case 6:
+    case 6:
         arme = 15;
         ui->groupBox_6->setEnabled(false);
         ui->groupBox->setEnabled(false);
@@ -874,56 +879,57 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->comboBox_5->setEnabled(false);
         ui->checkBox->setEnabled(false);
         ui->checkBox_2->setEnabled(false);
-        ui->spinBox_4->setEnabled(true);
         ui->pushButton->setEnabled(true);
+        ui->spinBox_4->setEnabled(true);
         switch(index.row()){
         case 0:
             ui->label_5->setText("+BO sort base.\nCible statique: +10.\nA couvert: -10 à -30");
             AttackIndex = 6;
             for(int i = 0; i<3; i++)
               for(int j = 0; j<27; j++)
-                tableau[i][j] = sorts[i][j];
+                tableau[i][j] = const_cast<char*>(sorts[i][j]);
             break;
-          case 1:
+        case 1:
             ui->label_5->setText("+BO sort base -bonus ag cible.\nA couvert: -10 à -80\nCible au centre zone effet: +20");
             AttackIndex = 7;
             for(int i = 0; i<5; i++)
               for(int j=0; j<26; j++)
-                tableau[i][j] = boules[i][j];
+                tableau[i][j] = const_cast<char*>(boules[i][j]);
             break;
-          case 2:
+        case 2:
             ui->label_5->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
             AttackIndex = 8;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
-                tableau[i][j] = eclairs[i][j];
+                tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
-          case 3:
+        case 3:
             ui->label_5->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
             AttackIndex = 9;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
-                tableau[i][j] = eclairs[i][j];
+                tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
-          case 4:
+        case 4:
             ui->label_5->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
             AttackIndex = 10;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
-                tableau[i][j] = eclairs[i][j];
+                tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
-          case 5:
+        case 5:
             ui->label_5->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
             AttackIndex = 11;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
-                tableau[i][j] = eclairs[i][j];
+                tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
-          default:
+        default:
             break;
-          }
+        }
+        break;
     default:
-      break;
+        break;
     }
 }
 
@@ -1078,31 +1084,31 @@ void MainWindow::on_checkBox_toggled(bool checked)
             else
                 ui->pushButton->setEnabled(true);
         }
-        else if(arme == 3 || arme == 4){
+        else if(arme == 5 || arme == 6){
             if(ui->spinBox_4->value() < 4 || ui->spinBox_4->value() > 40)
                 ui->pushButton->setEnabled(false);
             else
                 ui->pushButton->setEnabled(true);
         }
-        else if(arme == 5){
+        else if(arme == 7){
             if(ui->spinBox_4->value() < 3 || ui->spinBox_4->value() > 20)
                 ui->pushButton->setEnabled(false);
             else
                 ui->pushButton->setEnabled(true);
         }
-        else if(arme == 6){
+        else if(arme == 8){
             if(ui->spinBox_4->value() < 1 || ui->spinBox_4->value() > 8)
                 ui->pushButton->setEnabled(false);
             else
                 ui->pushButton->setEnabled(true);
         }
-        else if(arme == 7){
+        else if(arme == 3){
             if(ui->spinBox_4->value() < 7 || ui->spinBox_4->value() > 120)
                 ui->pushButton->setEnabled(false);
             else
                 ui->pushButton->setEnabled(true);
         }
-        else if(arme == 8){
+        else if(arme == 4){
             if(ui->spinBox_4->value() < 6 || ui->spinBox_4->value() > 80)
                 ui->pushButton->setEnabled(false);
             else
@@ -1167,31 +1173,31 @@ void MainWindow::on_spinBox_4_valueChanged(int arg1)
         else
             ui->pushButton->setEnabled(true);
     }
-    else if(arme == 3 || arme == 4){
+    else if(arme == 5 || arme == 6){
         if(arg1 < 4 || arg1 > 40)
             ui->pushButton->setEnabled(false);
         else
             ui->pushButton->setEnabled(true);
     }
-    else if(arme == 5){
+    else if(arme == 7){
         if(arg1 < 3 || arg1 > 20)
             ui->pushButton->setEnabled(false);
         else
             ui->pushButton->setEnabled(true);
     }
-    else if(arme == 6){
+    else if(arme == 8){
         if(arg1 < 1 || arg1 > 8)
             ui->pushButton->setEnabled(false);
         else
             ui->pushButton->setEnabled(true);
     }
-    else if(arme == 7){
+    else if(arme == 3){
         if(arg1 < 7 || arg1 > 120)
             ui->pushButton->setEnabled(false);
         else
             ui->pushButton->setEnabled(true);
     }
-    else if(arme == 8){
+    else if(arme == 4){
         if(arg1 < 6 || arg1 > 80)
             ui->pushButton->setEnabled(false);
         else
