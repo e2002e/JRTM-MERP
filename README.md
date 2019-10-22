@@ -13,5 +13,6 @@ Inclut toutes les attaques du livre, les sorts, les manoeuvres dynamiques, les t
 
 4 Launch ./jrtm
 
+There is a release for linux x64 in the "releases" tab.
 Let me know about the english translation because I don't have the book to check that.
 
