@@ -578,8 +578,6 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
 {
     switch (index.column()) {
     case 0:
-        ui->groupBox_6->setEnabled(true);
-        ui->groupBox->setEnabled(true);
         ui->comboBox_5->setEnabled(false);
         ui->spinBox_5->setEnabled(true);
         ui->spinBox_5->setValue(0);
@@ -631,8 +629,6 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         }
         break;
     case 1:
-        ui->groupBox_6->setEnabled(true);
-        ui->groupBox->setEnabled(true);
         ui->comboBox_5->setEnabled(false);
         ui->spinBox_5->setEnabled(true);
         ui->spinBox_5->setValue(0);
@@ -679,8 +675,6 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         }
         break;
     case 2:
-        ui->groupBox_6->setEnabled(true);
-        ui->groupBox->setEnabled(true);
         ui->comboBox_5->setEnabled(false);
         ui->spinBox_5->setEnabled(true);
         ui->spinBox_5->setValue(0);
@@ -724,8 +718,6 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         }
         break;
     case 3:
-        ui->groupBox_6->setEnabled(true);
-        ui->groupBox->setEnabled(true);
         ui->comboBox_5->setEnabled(false);
         ui->comboBox_8->setEnabled(false);
         ui->spinBox_4->setEnabled(true);
@@ -795,8 +787,6 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         }
         break;
     case 4:
-        ui->groupBox_6->setEnabled(true);
-        ui->groupBox->setEnabled(true);
         MainWindow::AttackIndex = 4;
         for(int i = 0; i<5;i++){
             for(int j = 0;j<23;j++)
@@ -840,8 +830,6 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         }
         break;
     case 5:
-        ui->groupBox_6->setEnabled(true);
-        ui->groupBox->setEnabled(true);
         MainWindow::AttackIndex = 5;
         for(int i = 0; i<5;i++){
             for(int j = 0;j<21;j++)
@@ -871,8 +859,6 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         break;
     case 6:
         arme = 15;
-        ui->groupBox_6->setEnabled(false);
-        ui->groupBox->setEnabled(false);
         ui->spinBox_5->setEnabled(true);
         ui->spinBox_5->setValue(0);
         ui->comboBox_8->setEnabled(true);
