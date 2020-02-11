@@ -47,240 +47,452 @@
      <height>512</height>
     </size>
    </property>
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>720</width>
-      <height>1280</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>720</width>
-      <height>1280</height>
-     </size>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <attribute name="title">
-      <string>Combats</string>
-     </attribute>
-     <widget class="QWidget" name="layoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>711</width>
-        <height>1241</height>
-       </rect>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <property name="sizeConstraint">
-        <enum>QLayout::SetDefaultConstraint</enum>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>720</width>
+        <height>1280</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <property name="enabled">
+        <bool>true</bool>
        </property>
-       <property name="spacing">
-        <number>2</number>
-       </property>
-       <item row="7" column="0">
-        <layout class="QGridLayout" name="gridLayout_2">
-         <item row="2" column="1">
-          <widget class="QCheckBox" name="checkBox">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="text">
-            <string>Lancée</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-          </widget>
+       <attribute name="title">
+        <string>Combats</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>711</width>
+          <height>1241</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item row="7" column="0">
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="2" column="1">
+            <widget class="QCheckBox" name="checkBox">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="text">
+              <string>Lancée</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QCheckBox" name="checkBox_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="text">
+              <string>Sans recharger</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_10">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>moitié de santé</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
-         <item row="2" column="2">
-          <widget class="QCheckBox" name="checkBox_2">
-           <property name="enabled">
-            <bool>true</bool>
+         <item row="10" column="0">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_36">
+             <property name="text">
+              <string>Target lvl</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_12</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QSpinBox" name="spinBox_12">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximum">
+              <number>15</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="label_35">
+             <property name="text">
+              <string>Attack lvl</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_13</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLabel" name="label_37">
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="text">
+              <string>Jet</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_11</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QSpinBox" name="spinBox_13">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>15</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="3">
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Serif</family>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>JR</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QSpinBox" name="spinBox_11">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="accelerated">
+              <bool>true</bool>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3" colspan="4">
+            <widget class="QLabel" name="label_38">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="text">
+              <string>Result</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="buddy">
+              <cstring>pushButton_5</cstring>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
            </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>11</pointsize>
-            </font>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="text">
-            <string>Sans recharger</string>
-           </property>
-          </widget>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <property name="text">
+              <string>Jet</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="accelerated">
+              <bool>true</bool>
+             </property>
+             <property name="showGroupSeparator" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>999</number>
+             </property>
+             <property name="value">
+              <number>1</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="text">
+              <string>BO</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_2</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="accelerated">
+              <bool>true</bool>
+             </property>
+             <property name="showGroupSeparator" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="minimum">
+              <number>-49</number>
+             </property>
+             <property name="maximum">
+              <number>300</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <property name="text">
+              <string>BD</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_3</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="accelerated">
+              <bool>true</bool>
+             </property>
+             <property name="showGroupSeparator" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="minimum">
+              <number>-49</number>
+             </property>
+             <property name="maximum">
+              <number>300</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Serif</family>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Attaque/sort</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
          <item row="2" column="0">
-          <widget class="QCheckBox" name="checkBox_10">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <italic>false</italic>
+               <underline>true</underline>
+              </font>
+             </property>
+             <property name="text">
+              <string>distance en pieds</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_4</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_4">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximum">
+              <number>400</number>
+             </property>
+             <property name="value">
+              <number>1</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="result">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>11</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>moitié de santé</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="10" column="0">
-        <layout class="QGridLayout" name="gridLayout_3">
-         <item row="0" column="3">
-          <widget class="QLabel" name="label_36">
-           <property name="text">
-            <string>Target lvl</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="buddy">
-            <cstring>spinBox_12</cstring>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="4">
-          <widget class="QSpinBox" name="spinBox_12">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="maximum">
-            <number>15</number>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0" colspan="2">
-          <widget class="QLabel" name="label_35">
-           <property name="text">
-            <string>Attack lvl</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="buddy">
-            <cstring>spinBox_13</cstring>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="5">
-          <widget class="QLabel" name="label_37">
-           <property name="layoutDirection">
-            <enum>Qt::RightToLeft</enum>
-           </property>
-           <property name="text">
-            <string>Jet</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="buddy">
-            <cstring>spinBox_11</cstring>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QSpinBox" name="spinBox_13">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimum">
-            <number>1</number>
-           </property>
-           <property name="maximum">
-            <number>15</number>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0" colspan="3">
-          <widget class="QPushButton" name="pushButton_5">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Serif</family>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>JR</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="6">
-          <widget class="QSpinBox" name="spinBox_11">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="accelerated">
-            <bool>true</bool>
-           </property>
-           <property name="maximum">
-            <number>100</number>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="3" colspan="4">
-          <widget class="QLabel" name="label_38">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -292,267 +504,430 @@
              <bold>true</bold>
             </font>
            </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
            <property name="frameShape">
             <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="midLineWidth">
+            <number>0</number>
            </property>
            <property name="text">
             <string>Result</string>
            </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
+           <property name="textFormat">
+            <enum>Qt::PlainText</enum>
            </property>
            <property name="buddy">
-            <cstring>pushButton_5</cstring>
+            <cstring>pushButton</cstring>
            </property>
           </widget>
          </item>
-        </layout>
-       </item>
-       <item row="0" column="0">
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <property name="sizeConstraint">
-          <enum>QLayout::SetDefaultConstraint</enum>
-         </property>
-         <item>
-          <widget class="QLabel" name="label">
-           <property name="frameShape">
-            <enum>QFrame::NoFrame</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <property name="text">
-            <string>Jet</string>
-           </property>
-           <property name="buddy">
-            <cstring>spinBox</cstring>
-           </property>
-          </widget>
+         <item row="4" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Panel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <property name="text">
+              <string>Type(max) Maladresse(type(modif)/modif)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>50</weight>
+               <italic>true</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
-         <item>
-          <widget class="QSpinBox" name="spinBox">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="accelerated">
-            <bool>true</bool>
-           </property>
-           <property name="showGroupSeparator" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="minimum">
-            <number>1</number>
-           </property>
-           <property name="maximum">
-            <number>999</number>
-           </property>
-           <property name="value">
-            <number>1</number>
-           </property>
-          </widget>
+         <item row="6" column="0">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="4">
+            <widget class="QComboBox" name="comboBox_8">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QComboBox::AdjustToContents</enum>
+             </property>
+             <item>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_34">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <italic>true</italic>
+               <underline>true</underline>
+              </font>
+             </property>
+             <property name="text">
+              <string>rounds de
+préparation du
+sort:</string>
+             </property>
+             <property name="buddy">
+              <cstring>comboBox_8</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboBox_5">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QComboBox::AdjustToContents</enum>
+             </property>
+             <item>
+              <property name="text">
+               <string>minuscule</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>petite</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>moyenne</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>grande</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>énormes</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+               <underline>true</underline>
+              </font>
+             </property>
+             <property name="text">
+              <string>Taille de
+l'attaque:</string>
+             </property>
+             <property name="buddy">
+              <cstring>comboBox_5</cstring>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
-           <property name="text">
-            <string>BO</string>
-           </property>
-           <property name="buddy">
-            <cstring>spinBox_2</cstring>
-           </property>
-          </widget>
+         <item row="3" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <italic>false</italic>
+               <underline>true</underline>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="text">
+              <string>Armure</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="buddy">
+              <cstring>comboBox_2</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QComboBox::AdjustToContents</enum>
+             </property>
+             <item>
+              <property name="text">
+               <string>Sans</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cuir souple</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cuir rigide</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Mailles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Plates</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
          </item>
-         <item>
-          <widget class="QSpinBox" name="spinBox_2">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="accelerated">
-            <bool>true</bool>
-           </property>
-           <property name="showGroupSeparator" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="minimum">
-            <number>-49</number>
-           </property>
-           <property name="maximum">
-            <number>300</number>
-           </property>
-          </widget>
+         <item row="9" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QRadioButton" name="radioButton_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>bouclier</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_7">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Surprit</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Flanc</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Derrière</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_8">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Etourdi/au sol</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
-         <item>
-          <widget class="QLabel" name="label_3">
-           <property name="frameShape">
-            <enum>QFrame::NoFrame</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <property name="text">
-            <string>BD</string>
-           </property>
-           <property name="buddy">
-            <cstring>spinBox_3</cstring>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSpinBox" name="spinBox_3">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="accelerated">
-            <bool>true</bool>
-           </property>
-           <property name="showGroupSeparator" stdset="0">
-            <bool>false</bool>
-           </property>
-           <property name="minimum">
-            <number>-49</number>
-           </property>
-           <property name="maximum">
-            <number>300</number>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton">
+         <item row="11" column="0">
+          <widget class="QTreeWidget" name="treeWidget">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Serif</family>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
            </property>
-           <property name="text">
-            <string>Attaque/sort</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="2" column="0">
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QLabel" name="label_8">
-           <property name="font">
-            <font>
-             <pointsize>11</pointsize>
-             <italic>false</italic>
-             <underline>true</underline>
-            </font>
-           </property>
-           <property name="text">
-            <string>distance en pieds</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="buddy">
-            <cstring>spinBox_4</cstring>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSpinBox" name="spinBox_4">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="maximum">
-            <number>400</number>
-           </property>
-           <property name="value">
-            <number>1</number>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="result">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>12</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::WinPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
-         </property>
-         <property name="lineWidth">
-          <number>1</number>
-         </property>
-         <property name="midLineWidth">
-          <number>0</number>
-         </property>
-         <property name="text">
-          <string>Result</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::PlainText</enum>
-         </property>
-         <property name="buddy">
-          <cstring>pushButton</cstring>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QLabel" name="label_6">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
+           <property name="maximumSize">
+            <size>
+             <width>11111</width>
+             <height>11111</height>
+            </size>
            </property>
            <property name="font">
             <font>
-             <pointsize>9</pointsize>
+             <pointsize>10</pointsize>
             </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
            </property>
            <property name="frameShape">
             <enum>QFrame::Panel</enum>
@@ -560,1750 +935,1369 @@
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-           <property name="text">
-            <string>Type(max) Maladresse(type(modif)/modif)</string>
+           <property name="midLineWidth">
+            <number>0</number>
            </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_5">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
            </property>
-           <property name="font">
-            <font>
-             <pointsize>9</pointsize>
-             <weight>50</weight>
-             <italic>true</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="6" column="0">
-        <layout class="QGridLayout" name="gridLayout_5">
-         <item row="0" column="4">
-          <widget class="QComboBox" name="comboBox_8">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
            </property>
            <property name="sizeAdjustPolicy">
-            <enum>QComboBox::AdjustToContents</enum>
+            <enum>QAbstractScrollArea::AdjustToContents</enum>
            </property>
-           <item>
-            <property name="text">
-             <string>0</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>1</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>2</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>3</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>4</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="0" column="3">
-          <widget class="QLabel" name="label_34">
-           <property name="font">
-            <font>
-             <pointsize>9</pointsize>
-             <italic>true</italic>
-             <underline>true</underline>
-            </font>
+           <property name="autoScrollMargin">
+            <number>18</number>
            </property>
-           <property name="text">
-            <string>rounds de
-préparation du
-sort:</string>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectItems</enum>
            </property>
-           <property name="buddy">
-            <cstring>comboBox_8</cstring>
+           <property name="textElideMode">
+            <enum>Qt::ElideRight</enum>
            </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QComboBox" name="comboBox_5">
-           <property name="enabled">
+           <property name="indentation">
+            <number>0</number>
+           </property>
+           <property name="rootIsDecorated">
+            <bool>false</bool>
+           </property>
+           <property name="uniformRowHeights">
+            <bool>false</bool>
+           </property>
+           <property name="itemsExpandable">
+            <bool>false</bool>
+           </property>
+           <property name="sortingEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="allColumnsShowFocus">
+            <bool>false</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+           <property name="headerHidden">
+            <bool>false</bool>
+           </property>
+           <property name="expandsOnDoubleClick">
             <bool>true</bool>
            </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="sizeAdjustPolicy">
-            <enum>QComboBox::AdjustToContents</enum>
-           </property>
-           <item>
-            <property name="text">
-             <string>minuscule</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>petite</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>moyenne</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>grande</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>énormes</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_9">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>9</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-             <underline>true</underline>
-            </font>
-           </property>
-           <property name="text">
-            <string>Taille de
-l'attaque:</string>
-           </property>
-           <property name="buddy">
-            <cstring>comboBox_5</cstring>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="3" column="0">
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
-          <widget class="QLabel" name="label_4">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="baseSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <italic>false</italic>
-             <underline>true</underline>
-            </font>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::NoFrame</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
-           <property name="text">
-            <string>Armure</string>
-           </property>
-           <property name="scaledContents">
-            <bool>false</bool>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="buddy">
-            <cstring>comboBox_2</cstring>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_2">
-           <property name="enabled">
+           <attribute name="headerVisible">
             <bool>true</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="sizeAdjustPolicy">
-            <enum>QComboBox::AdjustToContents</enum>
-           </property>
+           </attribute>
+           <attribute name="headerCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="headerMinimumSectionSize">
+            <number>40</number>
+           </attribute>
+           <attribute name="headerDefaultSectionSize">
+            <number>118</number>
+           </attribute>
+           <attribute name="headerStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>tranchantes</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>contendantes</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>deux mains</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>projectiles</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>griffes/dents</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>saisie/déséquilibre</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Sorts</string>
+            </property>
+           </column>
            <item>
             <property name="text">
-             <string>Sans</string>
+             <string>Cimeterre</string>
+            </property>
+            <property name="text">
+             <string>Filet</string>
+            </property>
+            <property name="text">
+             <string>Baton</string>
+            </property>
+            <property name="text">
+             <string>Bolas</string>
+            </property>
+            <property name="text">
+             <string>Pince/Bec</string>
+            </property>
+            <property name="text">
+             <string>Saisir/Avaller</string>
+            </property>
+            <property name="text">
+             <string>base</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Cuir souple</string>
+             <string>Dague</string>
+            </property>
+            <property name="text">
+             <string>Fouet</string>
+            </property>
+            <property name="text">
+             <string>Epée à deux mains</string>
+            </property>
+            <property name="text">
+             <string>Arc Composite</string>
+            </property>
+            <property name="text">
+             <string>Morsure</string>
+            </property>
+            <property name="text">
+             <string>Bélier/Tête</string>
+            </property>
+            <property name="text">
+             <string>boules</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Cuir rigide</string>
+             <string>Epée courte</string>
+            </property>
+            <property name="text">
+             <string>Marteau de guerre</string>
+            </property>
+            <property name="text">
+             <string>Fléau d'armes</string>
+            </property>
+            <property name="text">
+             <string>Arbalète</string>
+            </property>
+            <property name="text">
+             <string>Griffe/serre</string>
+            </property>
+            <property name="text">
+             <string>Tacle/Plaquage</string>
+            </property>
+            <property name="text">
+             <string>éclairs choquants</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Mailles</string>
+             <string>Epée longue</string>
+            </property>
+            <property name="text">
+             <string>Masse</string>
+            </property>
+            <property name="text">
+             <string>Hache de bataille</string>
+            </property>
+            <property name="text">
+             <string>Arc long</string>
+            </property>
+            <property name="text">
+             <string>Corne/Dard</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>éclairs d'eau</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Plates</string>
+             <string>Hache</string>
+            </property>
+            <property name="text">
+             <string>Massue</string>
+            </property>
+            <property name="text">
+             <string>Hallebarde</string>
+            </property>
+            <property name="text">
+             <string>Arc court</string>
+            </property>
+            <property name="text">
+             <string>Minuscules</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>éclairs de glace</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Javelot</string>
+            </property>
+            <property name="text">
+             <string>Morgenstern</string>
+            </property>
+            <property name="text">
+             <string>Lance de cavalerie</string>
+            </property>
+            <property name="text">
+             <string>Fronde</string>
+            </property>
+            <property name="text">
+             <string>Piétinement</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>éclairs de feu &amp; foudroyants</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lance</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Chute/Ecrasement</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Poing/Pied</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
             </property>
            </item>
           </widget>
+         </item>
+         <item row="8" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QSpinBox" name="spinBox_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>*10p parcourus &gt; 10p</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Dégaine ou
+Change d'arme</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
-       </item>
-       <item row="9" column="0">
-        <layout class="QHBoxLayout" name="horizontalLayout_6">
-         <item>
-          <widget class="QRadioButton" name="radioButton_6">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>11</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>bouclier</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="radioButton_7">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>Surprit</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="radioButton_2">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>Flanc</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="radioButton_3">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>Derrière</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="radioButton_8">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>11</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Etourdi/au sol</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="11" column="0">
-        <widget class="QTreeWidget" name="treeWidget">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Maneuvres</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_8"/>
+       <widget class="QSpinBox" name="spinBox_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="minimum">
+         <number>-150</number>
+        </property>
+        <property name="maximum">
+         <number>275</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_7">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>40</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="minimum">
+         <number>-150</number>
+        </property>
+        <property name="maximum">
+         <number>275</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_8">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>40</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="minimum">
+         <number>-150</number>
+        </property>
+        <property name="maximum">
+         <number>275</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>50</y>
+          <width>21</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>50</y>
+          <width>21</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>90</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Etourdi</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>90</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Tombé</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>171</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Membre hors d'usage</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>20</y>
+          <width>201</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Déplacement  Compétence</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Result">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>90</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="text">
+         <string>Result</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>120</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Serif</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>GO</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>90</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Routine</string>
          </property>
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
+        </item>
+        <item>
+         <property name="text">
+          <string>Aisée</string>
          </property>
-         <property name="maximumSize">
-          <size>
-           <width>11111</width>
-           <height>11111</height>
-          </size>
+        </item>
+        <item>
+         <property name="text">
+          <string>Facile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Moyenne</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Difficile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Trés difficile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Extrèmement difficile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Pure folie</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Absurde</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Jet</string>
+        </property>
+       </widget>
+       <zorder>spinBox_6</zorder>
+       <zorder>spinBox_7</zorder>
+       <zorder>spinBox_8</zorder>
+       <zorder>label_10</zorder>
+       <zorder>label_11</zorder>
+       <zorder>checkBox_3</zorder>
+       <zorder>checkBox_4</zorder>
+       <zorder>checkBox_5</zorder>
+       <zorder>label_12</zorder>
+       <zorder>label_13</zorder>
+       <zorder>Result</zorder>
+       <zorder>pushButton_2</zorder>
+       <zorder>comboBox</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Stratégie</string>
+       </attribute>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>961</y>
+          <width>112</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="text">
+         <string>Taille du groupe</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>253</y>
+          <width>50</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="text">
+         <string>Terrain</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>1208</y>
+          <width>63</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <italic>true</italic>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>population</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_6">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>1171</y>
+          <width>70</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>un</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>deux</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3-4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5-7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8-10</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11-20</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21-50</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>51+</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>714</y>
+          <width>94</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="text">
+         <string>Déplacement</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_7">
+        <property name="geometry">
+         <rect>
+          <x>75</x>
+          <y>1208</y>
+          <width>109</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Dense</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Modéré</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Faible</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Eparse</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Désertique</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="comboBox_3">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>464</y>
+          <width>159</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Route</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dégagé</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Forêt</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Accidenté</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Accidenté et boisé</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Montagneux</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>134</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="text">
+         <string>Activité  /  Esquive</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>259</x>
+          <y>6</y>
+          <width>148</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="title">
+         <string>Activitée</string>
+        </property>
+        <widget class="QRadioButton" name="radioButton_12">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>9</pointsize>
           </font>
          </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
+         <property name="text">
+          <string>hostile</string>
          </property>
-         <property name="frameShape">
-          <enum>QFrame::Panel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <property name="midLineWidth">
-          <number>0</number>
-         </property>
-         <property name="verticalScrollBarPolicy">
-          <enum>Qt::ScrollBarAsNeeded</enum>
-         </property>
-         <property name="horizontalScrollBarPolicy">
-          <enum>Qt::ScrollBarAsNeeded</enum>
-         </property>
-         <property name="sizeAdjustPolicy">
-          <enum>QAbstractScrollArea::AdjustToContents</enum>
-         </property>
-         <property name="autoScrollMargin">
-          <number>18</number>
-         </property>
-         <property name="selectionBehavior">
-          <enum>QAbstractItemView::SelectItems</enum>
-         </property>
-         <property name="textElideMode">
-          <enum>Qt::ElideRight</enum>
-         </property>
-         <property name="indentation">
-          <number>0</number>
-         </property>
-         <property name="rootIsDecorated">
+         <property name="autoExclusive">
           <bool>false</bool>
          </property>
-         <property name="uniformRowHeights">
-          <bool>false</bool>
-         </property>
-         <property name="itemsExpandable">
-          <bool>false</bool>
-         </property>
-         <property name="sortingEnabled">
-          <bool>false</bool>
-         </property>
-         <property name="allColumnsShowFocus">
-          <bool>false</bool>
-         </property>
-         <property name="wordWrap">
-          <bool>false</bool>
-         </property>
-         <property name="headerHidden">
-          <bool>false</bool>
-         </property>
-         <property name="expandsOnDoubleClick">
-          <bool>true</bool>
-         </property>
-         <attribute name="headerVisible">
-          <bool>true</bool>
-         </attribute>
-         <attribute name="headerCascadingSectionResizes">
-          <bool>false</bool>
-         </attribute>
-         <attribute name="headerMinimumSectionSize">
-          <number>40</number>
-         </attribute>
-         <attribute name="headerDefaultSectionSize">
-          <number>118</number>
-         </attribute>
-         <attribute name="headerStretchLastSection">
-          <bool>true</bool>
-         </attribute>
-         <column>
-          <property name="text">
-           <string>tranchantes</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>contendantes</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>deux mains</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>projectiles</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>griffes/dents</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>saisie/déséquilibre</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Sorts</string>
-          </property>
-         </column>
-         <item>
-          <property name="text">
-           <string>Cimeterre</string>
-          </property>
-          <property name="text">
-           <string>Filet</string>
-          </property>
-          <property name="text">
-           <string>Baton</string>
-          </property>
-          <property name="text">
-           <string>Bolas</string>
-          </property>
-          <property name="text">
-           <string>Pince/Bec</string>
-          </property>
-          <property name="text">
-           <string>Saisir/Avaller</string>
-          </property>
-          <property name="text">
-           <string>base</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Dague</string>
-          </property>
-          <property name="text">
-           <string>Fouet</string>
-          </property>
-          <property name="text">
-           <string>Epée à deux mains</string>
-          </property>
-          <property name="text">
-           <string>Arc Composite</string>
-          </property>
-          <property name="text">
-           <string>Morsure</string>
-          </property>
-          <property name="text">
-           <string>Bélier/Tête</string>
-          </property>
-          <property name="text">
-           <string>boules</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Epée courte</string>
-          </property>
-          <property name="text">
-           <string>Marteau de guerre</string>
-          </property>
-          <property name="text">
-           <string>Fléau d'armes</string>
-          </property>
-          <property name="text">
-           <string>Arbalète</string>
-          </property>
-          <property name="text">
-           <string>Griffe/serre</string>
-          </property>
-          <property name="text">
-           <string>Tacle/Plaquage</string>
-          </property>
-          <property name="text">
-           <string>éclairs choquants</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Epée longue</string>
-          </property>
-          <property name="text">
-           <string>Masse</string>
-          </property>
-          <property name="text">
-           <string>Hache de bataille</string>
-          </property>
-          <property name="text">
-           <string>Arc long</string>
-          </property>
-          <property name="text">
-           <string>Corne/Dard</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string>éclairs d'eau</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Hache</string>
-          </property>
-          <property name="text">
-           <string>Massue</string>
-          </property>
-          <property name="text">
-           <string>Hallebarde</string>
-          </property>
-          <property name="text">
-           <string>Arc court</string>
-          </property>
-          <property name="text">
-           <string>Minuscules</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string>éclairs de glace</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Javelot</string>
-          </property>
-          <property name="text">
-           <string>Morgenstern</string>
-          </property>
-          <property name="text">
-           <string>Lance de cavalerie</string>
-          </property>
-          <property name="text">
-           <string>Fronde</string>
-          </property>
-          <property name="text">
-           <string>Piétinement</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string>éclairs de feu &amp; foudroyants</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Lance</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string>Chute/Ecrasement</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string>Poing/Pied</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </item>
         </widget>
-       </item>
-       <item row="8" column="0">
-        <layout class="QHBoxLayout" name="horizontalLayout_5">
-         <item>
-          <widget class="QSpinBox" name="spinBox_5">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_7">
-           <property name="font">
-            <font>
-             <pointsize>11</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>*10p parcourus &gt; 10p</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="radioButton_9">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>11</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Dégaine ou
-Change d'arme</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Maneuvres</string>
-     </attribute>
-     <layout class="QGridLayout" name="gridLayout_8"/>
-     <widget class="QSpinBox" name="spinBox_6">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>40</y>
-        <width>71</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="accelerated">
-       <bool>true</bool>
-      </property>
-      <property name="minimum">
-       <number>-150</number>
-      </property>
-      <property name="maximum">
-       <number>275</number>
-      </property>
-      <property name="value">
-       <number>1</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinBox_7">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>40</y>
-        <width>71</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="accelerated">
-       <bool>true</bool>
-      </property>
-      <property name="minimum">
-       <number>-150</number>
-      </property>
-      <property name="maximum">
-       <number>275</number>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinBox_8">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>40</y>
-        <width>71</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="accelerated">
-       <bool>true</bool>
-      </property>
-      <property name="minimum">
-       <number>-150</number>
-      </property>
-      <property name="maximum">
-       <number>275</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_10">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>50</y>
-        <width>21</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>+</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>50</y>
-        <width>21</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>+</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="checkBox_3">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>90</y>
-        <width>90</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Etourdi</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="checkBox_4">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>110</y>
-        <width>90</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Tombé</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="checkBox_5">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>130</y>
-        <width>171</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Membre hors d'usage</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_13">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>20</y>
-        <width>201</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Déplacement  Compétence</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="Result">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>90</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>13</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <property name="text">
-       <string>Result</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>120</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Serif</family>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>GO</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>90</y>
-        <width>111</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>Routine</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Aisée</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Facile</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Moyenne</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Difficile</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Trés difficile</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Extrèmement difficile</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Pure folie</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Absurde</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QLabel" name="label_12">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>67</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Jet</string>
-      </property>
-     </widget>
-     <zorder>spinBox_6</zorder>
-     <zorder>spinBox_7</zorder>
-     <zorder>spinBox_8</zorder>
-     <zorder>label_10</zorder>
-     <zorder>label_11</zorder>
-     <zorder>checkBox_3</zorder>
-     <zorder>checkBox_4</zorder>
-     <zorder>checkBox_5</zorder>
-     <zorder>label_12</zorder>
-     <zorder>label_13</zorder>
-     <zorder>Result</zorder>
-     <zorder>pushButton_2</zorder>
-     <zorder>comboBox</zorder>
-    </widget>
-    <widget class="QWidget" name="tab_3">
-     <attribute name="title">
-      <string>Stratégie</string>
-     </attribute>
-     <widget class="QLabel" name="label_21">
-      <property name="geometry">
-       <rect>
-        <x>6</x>
-        <y>961</y>
-        <width>112</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>11</pointsize>
-       </font>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Panel</enum>
-      </property>
-      <property name="text">
-       <string>Taille du groupe</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_17">
-      <property name="geometry">
-       <rect>
-        <x>6</x>
-        <y>253</y>
-        <width>50</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>11</pointsize>
-       </font>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Panel</enum>
-      </property>
-      <property name="text">
-       <string>Terrain</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_24">
-      <property name="geometry">
-       <rect>
-        <x>6</x>
-        <y>1208</y>
-        <width>63</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <italic>true</italic>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>population</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox_6">
-      <property name="geometry">
-       <rect>
-        <x>6</x>
-        <y>1171</y>
-        <width>70</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>un</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>deux</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>3-4</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>5-7</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>8-10</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>11-20</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>21-50</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>51+</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QLabel" name="label_18">
-      <property name="geometry">
-       <rect>
-        <x>6</x>
-        <y>714</y>
-        <width>94</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>11</pointsize>
-       </font>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Panel</enum>
-      </property>
-      <property name="text">
-       <string>Déplacement</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox_7">
-      <property name="geometry">
-       <rect>
-        <x>75</x>
-        <y>1208</y>
-        <width>109</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>Dense</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Modéré</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Faible</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Eparse</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Désertique</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QComboBox" name="comboBox_3">
-      <property name="geometry">
-       <rect>
-        <x>6</x>
-        <y>464</y>
-        <width>159</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>Route</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Dégagé</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Forêt</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Accidenté</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Accidenté et boisé</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Montagneux</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QLabel" name="label_15">
-      <property name="geometry">
-       <rect>
-        <x>6</x>
-        <y>6</y>
-        <width>134</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>11</pointsize>
-       </font>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Panel</enum>
-      </property>
-      <property name="text">
-       <string>Activité  /  Esquive</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_5">
-      <property name="geometry">
-       <rect>
-        <x>259</x>
-        <y>6</y>
-        <width>148</width>
-        <height>451</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <kerning>true</kerning>
-       </font>
-      </property>
-      <property name="title">
-       <string>Activitée</string>
-      </property>
-      <widget class="QRadioButton" name="radioButton_12">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>20</y>
-         <width>91</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>hostile</string>
-       </property>
-       <property name="autoExclusive">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QRadioButton" name="radioButton_13">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>40</y>
-         <width>91</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>patrouilles</string>
-       </property>
-       <property name="autoExclusive">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QRadioButton" name="radioButton_14">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>60</y>
-         <width>91</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>curée</string>
-       </property>
-       <property name="autoExclusive">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QSpinBox" name="spinBox_9">
-      <property name="geometry">
-       <rect>
-        <x>6</x>
-        <y>216</y>
-        <width>63</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="accelerated">
-       <bool>true</bool>
-      </property>
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>999</number>
-      </property>
-      <property name="value">
-       <number>1</number>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_33">
-      <property name="geometry">
-       <rect>
-        <x>413</x>
-        <y>6</y>
-        <width>215</width>
-        <height>70</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>8</pointsize>
-       </font>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Sunken</enum>
-      </property>
-      <property name="text">
-       <string>Chaques tranches de 4 heures en voyage.
+        <widget class="QRadioButton" name="radioButton_13">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>patrouilles</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_14">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>curée</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_9">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>216</y>
+          <width>63</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>413</x>
+          <y>6</y>
+          <width>215</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="text">
+         <string>Chaques tranches de 4 heures en voyage.
 on fait un jet d'activité et d'esquive.
 La distance parcourue et les
  éventuelles rencontres sont affichées.
 </string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_20">
-      <property name="geometry">
-       <rect>
-        <x>75</x>
-        <y>216</y>
-        <width>16</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>-</string>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinBox_10">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>216</y>
-        <width>63</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="accelerated">
-       <bool>true</bool>
-      </property>
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>999</number>
-      </property>
-      <property name="value">
-       <number>1</number>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox_4">
-      <property name="geometry">
-       <rect>
-        <x>6</x>
-        <y>924</y>
-        <width>164</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>Normal</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Furtif</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Précautionneux</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Accéléré</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Lente chevauchée</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Chevauchée rapide</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_4">
-      <property name="geometry">
-       <rect>
-        <x>259</x>
-        <y>463</y>
-        <width>148</width>
-        <height>455</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="title">
-       <string>vision des habitants</string>
-      </property>
-      <property name="checkable">
-       <bool>true</bool>
-      </property>
-      <property name="checked">
-       <bool>false</bool>
-      </property>
-      <widget class="QCheckBox" name="checkBox_6">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>20</y>
-         <width>171</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>nyctalope nuit</string>
-       </property>
-       <property name="autoRepeat">
-        <bool>false</bool>
-       </property>
-       <property name="autoExclusive">
-        <bool>true</bool>
-       </property>
-       <property name="tristate">
-        <bool>false</bool>
-       </property>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>75</x>
+          <y>216</y>
+          <width>16</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_10">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>216</y>
+          <width>63</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_4">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>924</y>
+          <width>164</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Normal</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Furtif</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Précautionneux</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Accéléré</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lente chevauchée</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Chevauchée rapide</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>259</x>
+          <y>463</y>
+          <width>148</width>
+          <height>455</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>vision des habitants</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <widget class="QCheckBox" name="checkBox_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>171</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>nyctalope nuit</string>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="tristate">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_7">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>171</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>nyctalope jour</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>413</x>
+          <y>503</y>
+          <width>115</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <italic>true</italic>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Distance parcourue:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dist">
+        <property name="geometry">
+         <rect>
+          <x>534</x>
+          <y>503</y>
+          <width>16</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>624</x>
+          <y>503</y>
+          <width>24</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Km</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Rencontres">
+        <property name="geometry">
+         <rect>
+          <x>624</x>
+          <y>463</y>
+          <width>82</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="text">
+         <string>Rencontres</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>413</x>
+          <y>463</y>
+          <width>84</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Hack</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Travel</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>534</x>
+          <y>463</y>
+          <width>84</width>
+          <height>33</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>reset</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>259</x>
+          <y>1208</y>
+          <width>135</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Au campement</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <widget class="QRadioButton" name="radioButton">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>221</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>après 12h de voyage</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>221</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>après 16h de voyage</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
       </widget>
-      <widget class="QCheckBox" name="checkBox_7">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>40</y>
-         <width>171</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>nyctalope jour</string>
-       </property>
-       <property name="autoExclusive">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QLabel" name="label_22">
-      <property name="geometry">
-       <rect>
-        <x>413</x>
-        <y>503</y>
-        <width>115</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <italic>true</italic>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>Distance parcourue:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="dist">
-      <property name="geometry">
-       <rect>
-        <x>534</x>
-        <y>503</y>
-        <width>16</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_23">
-      <property name="geometry">
-       <rect>
-        <x>624</x>
-        <y>503</y>
-        <width>24</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>Km</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="Rencontres">
-      <property name="geometry">
-       <rect>
-        <x>624</x>
-        <y>463</y>
-        <width>82</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::WinPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Sunken</enum>
-      </property>
-      <property name="text">
-       <string>Rencontres</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="geometry">
-       <rect>
-        <x>413</x>
-        <y>463</y>
-        <width>84</width>
-        <height>34</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <family>Hack</family>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Travel</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_4">
-      <property name="geometry">
-       <rect>
-        <x>534</x>
-        <y>463</y>
-        <width>84</width>
-        <height>33</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>reset</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_3">
-      <property name="geometry">
-       <rect>
-        <x>259</x>
-        <y>1208</y>
-        <width>135</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Au campement</string>
-      </property>
-      <property name="checkable">
-       <bool>true</bool>
-      </property>
-      <property name="checked">
-       <bool>false</bool>
-      </property>
-      <widget class="QRadioButton" name="radioButton">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>221</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>après 12h de voyage</string>
-       </property>
-       <property name="autoExclusive">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QRadioButton" name="radioButton_4">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>50</y>
-         <width>221</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>après 16h de voyage</string>
-       </property>
-       <property name="autoExclusive">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_4">
-     <attribute name="title">
-      <string>Pense bête</string>
-     </attribute>
-     <widget class="QTextEdit" name="textEdit">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>200</y>
-        <width>231</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>8</pointsize>
-       </font>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Pense bête</string>
+       </attribute>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>231</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Cantarell';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_19">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>-10</y>
-        <width>371</width>
-        <height>201</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>9</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Points de coups:
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>-10</y>
+          <width>371</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Points de coups:
 repos + un par heure
 non repos + un / 3 heures
 
@@ -2314,151 +2308,151 @@ si blessures &gt;= points de coups:
 ---- coma stable mais jets de dés tout les jours pour charactéristique
 ---- peut être ramené à la vie avec des sorts / herbes
 ---- les blessures doivent être soignées celon la table TBS1 p279</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_25">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>180</y>
-        <width>111</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <italic>true</italic>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>Divers:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_26">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>60</y>
-        <width>211</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>Animaux &amp; Créatures p280/281</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_27">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>30</y>
-        <width>211</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>Manoeuvres p270/271</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_28">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>0</y>
-        <width>211</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>Echecs &amp; maladresses p269</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_29">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>0</y>
-        <width>211</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>Sorts p263-265</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_30">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>30</y>
-        <width>211</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>Critiques p266-268</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_31">
-      <property name="geometry">
-       <rect>
-        <x>370</x>
-        <y>90</y>
-        <width>121</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <underline>true</underline>
-       </font>
-      </property>
-      <property name="text">
-       <string>Objets p286-292</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_32">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>170</y>
-        <width>171</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>7</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Sorts:
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <italic>true</italic>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Divers:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>60</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Animaux &amp; Créatures p280/281</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>30</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Manoeuvres p270/271</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>0</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Echecs &amp; maladresses p269</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>0</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Sorts p263-265</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>30</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Critiques p266-268</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>90</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Objets p286-292</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>170</y>
+          <width>171</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Sorts:
 E Elémentaires !JR !BO !Table
 EB Elémentaire en boule !JR BO base TA8
 ED Elémentaire dirigé !JR BO dirigés TA7
@@ -2466,29 +2460,31 @@ F Force JR Bo base TA9
 P Passif JR Bo base TA9
 U Utilitaire JR Bo base TA9
 I Information !JR !BO!Table</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_39">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>280</y>
-        <width>301</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Armes:
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>301</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Armes:
 Si critique supérieur à A critique secondaire
 Sorts:
 Si critique supérieur a B critique secondaire</string>
-      </property>
+        </property>
+       </widget>
+      </widget>
      </widget>
-    </widget>
-   </widget>
+    </item>
+   </layout>
   </widget>
   <action name="actionexit">
    <property name="text">
