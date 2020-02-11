@@ -403,19 +403,20 @@ void MainWindow::do_result()
             case 0:
                 if(step > 9)
                     step = 9;
-                    break;
+                break;
+
             case 1:
                 if(step > 13)
                     step = 13;
-                    break;
+                break;
             case 2:
                 if(step > 16)
                     step = 16;
-                    break;
+                break;
             case 3:
                 if(step > 19)
                     step = 19;
-                    break;
+                break;
             default:
                  break;
             }
@@ -430,19 +431,19 @@ void MainWindow::do_result()
             case 0:
                 if(step > 7)
                     step = 7;
-                    break;
+                break;
             case 1:
                 if(step > 11)
                     step = 11;
-                    break;
+                break;
             case 2:
                 if(step > 14)
                     step = 14;
-                    break;
+                break;
             case 3:
                 if(step > 17)
                     step = 17;
-                    break;
+                break;
             default:
                 break;
             }
@@ -561,11 +562,6 @@ void MainWindow::on_radioButton_8_toggled(bool checked)
 void MainWindow::on_radioButton_9_toggled(bool checked)
 {
     MainWindow::switches = checked;
-}
-
-void MainWindow::on_radioButton_10_toggled(bool checked)
-{
-    MainWindow::half = checked;
 }
 
 void MainWindow::on_pushButton_clicked()
@@ -1051,6 +1047,7 @@ int MainWindow::set_portee(int portee)
         else if(ui->spinBox_4->value() > 300 && ui->spinBox_4->value() < 401 )
             return 75;
     }
+    return -1;
 }
 
 void MainWindow::on_checkBox_toggled(bool checked)
@@ -1335,3 +1332,7 @@ void MainWindow::on_pushButton_5_clicked()
       ui->label_38->setText("Resiste");
 }
 
+void MainWindow::on_checkBox_10_toggled(bool checked)
+{
+    MainWindow::half = checked;
+}

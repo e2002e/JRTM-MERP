@@ -36,8 +36,6 @@ private slots:
 
     void on_radioButton_9_toggled(bool checked);
 
-    void on_radioButton_10_toggled(bool checked);
-
     void on_pushButton_clicked();
 
     void on_treeWidget_clicked(const QModelIndex &index);
@@ -53,6 +51,8 @@ private slots:
     void on_pushButton_4_clicked();
 
     void on_pushButton_5_clicked();
+
+    void on_checkBox_10_toggled(bool checked);
 
 private:
     const char *tranchantes[5][23] = {{"M","0","0","0","0","0","0","0","7","9A","10A","11B","13C","15C","17D","19D","20D","21E","23E","25E","27E","28E","30E"},\
