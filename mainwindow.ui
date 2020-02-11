@@ -91,12 +91,24 @@
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="spacing">
+        <number>2</number>
+       </property>
        <item row="7" column="0">
         <layout class="QGridLayout" name="gridLayout_2">
          <item row="2" column="1">
           <widget class="QCheckBox" name="checkBox">
            <property name="enabled">
             <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
            </property>
            <property name="layoutDirection">
             <enum>Qt::LeftToRight</enum>
@@ -114,6 +126,12 @@
            <property name="enabled">
             <bool>true</bool>
            </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="font">
             <font>
              <pointsize>11</pointsize>
@@ -129,6 +147,12 @@
          </item>
          <item row="2" column="0">
           <widget class="QCheckBox" name="checkBox_10">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="font">
             <font>
              <pointsize>11</pointsize>
@@ -162,7 +186,7 @@
          <item row="0" column="4">
           <widget class="QSpinBox" name="spinBox_12">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -204,7 +228,7 @@
          <item row="0" column="2">
           <widget class="QSpinBox" name="spinBox_13">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -240,7 +264,7 @@
          <item row="0" column="6">
           <widget class="QSpinBox" name="spinBox_11">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -256,7 +280,7 @@
          <item row="3" column="3" colspan="4">
           <widget class="QLabel" name="label_38">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -308,7 +332,7 @@
          <item>
           <widget class="QSpinBox" name="spinBox">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -349,7 +373,7 @@
          <item>
           <widget class="QSpinBox" name="spinBox_2">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -387,7 +411,7 @@
          <item>
           <widget class="QSpinBox" name="spinBox_3">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -927,7 +951,7 @@ l'attaque:</string>
           <enum>Qt::ScrollBarAsNeeded</enum>
          </property>
          <property name="sizeAdjustPolicy">
-          <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
          </property>
          <property name="autoScrollMargin">
           <number>18</number>
@@ -1206,7 +1230,7 @@ l'attaque:</string>
          <item>
           <widget class="QSpinBox" name="spinBox_5">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -1233,13 +1257,20 @@ l'attaque:</string>
          </item>
          <item>
           <widget class="QRadioButton" name="radioButton_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="font">
             <font>
              <pointsize>11</pointsize>
             </font>
            </property>
            <property name="text">
-            <string>Dégaine ou change d'arme</string>
+            <string>Dégaine ou
+Change d'arme</string>
            </property>
            <property name="autoExclusive">
             <bool>false</bool>
