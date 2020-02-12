@@ -593,35 +593,35 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         MainWindow::AttackIndex = 0;
         switch (index.row()) {
         case 0:
-            ui->label_5->setText("Taille M(B)");
+            ui->label_6->setText("Taille M(B)");
             ui->checkBox->setEnabled(false);
             break;
         case 1:
-            ui->label_5->setText("Perforation(C) M(B)");
+            ui->label_6->setText("Perforation(C) M(B)");
             ui->checkBox->setEnabled(true);
             MainWindow::arme = 0;
             break;
         case 2:
-            ui->label_5->setText("Taille M(B)");
+            ui->label_6->setText("Taille M(B)");
             ui->checkBox->setEnabled(true);
             MainWindow::arme = 1;
             break;
         case 3:
-            ui->label_5->setText("Taille M(B)");
+            ui->label_6->setText("Taille M(B)");
             ui->checkBox->setEnabled(false);
             break;
         case 4:
-            ui->label_5->setText("Taille M(B)");
+            ui->label_6->setText("Taille M(B)");
             ui->checkBox->setEnabled(true);
             MainWindow::arme = 2;
             break;
         case 5:
-            ui->label_5->setText("Perforation M(C)");
+            ui->label_6->setText("Perforation M(C)");
             ui->checkBox->setEnabled(true);
             MainWindow::arme = 3;
             break;
         case 6:
-            ui->label_5->setText("Perforation Taille(A) M(C)");
+            ui->label_6->setText("Perforation Taille(A) M(C)");
             ui->checkBox->setEnabled(true);
             MainWindow::arme = 4;
             break;
@@ -644,31 +644,31 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         MainWindow::AttackIndex = 1;
         switch (index.row()) {
         case 0:
-            ui->label_5->setText("Saisie M(A)");
+            ui->label_6->setText("Saisie M(A)");
             ui->checkBox->setEnabled(true);
             MainWindow::arme = 5;
             break;
         case 1:
-            ui->label_5->setText("Saisie(C) Taille(A) M(A)");
+            ui->label_6->setText("Saisie(C) Taille(A) M(A)");
             ui->checkBox->setEnabled(false);
             break;
         case 2:
-            ui->label_5->setText("Contusion M(A)");
+            ui->label_6->setText("Contusion M(A)");
             ui->checkBox->setEnabled(true);
             MainWindow::arme = 6;
             break;
         case 3:
-            ui->label_5->setText("Contusion M(A)");
+            ui->label_6->setText("Contusion M(A)");
             ui->checkBox->setEnabled(true);
             MainWindow::arme = 7;
             break;
         case 4:
-            ui->label_5->setText("Contusion(D) M(A)");
+            ui->label_6->setText("Contusion(D) M(A)");
             ui->checkBox->setEnabled(true);
             MainWindow::arme = 8;
             break;
         case 5:
-            ui->label_5->setText("Contusion Perforation(A), M(Contusion(B))");
+            ui->label_6->setText("Contusion Perforation(A), M(Contusion(B))");
             ui->checkBox->setEnabled(false);
             break;
         default:
@@ -691,27 +691,27 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         MainWindow::AttackIndex = 2;
         switch (index.row()) {
         case 0:
-            ui->label_5->setText("Contusion M(C)");
+            ui->label_6->setText("Contusion M(C)");
             ui->checkBox->setEnabled(false);
             break;
         case 1:
-            ui->label_5->setText("Taille Contusion M(C)");
+            ui->label_6->setText("Taille Contusion M(C)");
             ui->checkBox->setEnabled(false);
             break;
         case 2:
-            ui->label_5->setText("Contusion Perforation M(Contusion(C))");
+            ui->label_6->setText("Contusion Perforation M(Contusion(C))");
             ui->checkBox->setEnabled(false);
             break;
         case 3:
-            ui->label_5->setText("Taille Contusion M(C)");
+            ui->label_6->setText("Taille Contusion M(C)");
             ui->checkBox->setEnabled(false);
             break;
         case 4:
-            ui->label_5->setText("Taille Perforation M(D)");
+            ui->label_6->setText("Taille Perforation M(D)");
             ui->checkBox->setEnabled(false);
             break;
         case 5:
-            ui->label_5->setText("Perforation Déséquilibre M(E)");
+            ui->label_6->setText("Perforation Déséquilibre M(E)");
             ui->checkBox->setEnabled(false);
             break;
         default:
@@ -730,7 +730,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->checkBox->setEnabled(false);
         switch (index.row()) {
         case 0:
-            ui->label_5->setText("Saisie Contusion(A) M(Saisie(B))");
+            ui->label_6->setText("Saisie Contusion(A) M(Saisie(B))");
             ui->checkBox_2->setEnabled(false);
             ui->spinBox_5->setEnabled(true);
             ui->spinBox_5->setValue(0);
@@ -739,7 +739,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
             MainWindow::arme = 9;
             break;
         case 1:
-            ui->label_5->setText("Perforation M(C)");
+            ui->label_6->setText("Perforation M(C)");
             ui->spinBox_5->setValue(0);
             ui->spinBox_5->setEnabled(false);
             ui->checkBox_2->setEnabled(true);
@@ -748,7 +748,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
             MainWindow::arme = 10;
             break;
         case 2:
-            ui->label_5->setText("Perforation M(E)");
+            ui->label_6->setText("Perforation M(E)");
             ui->checkBox_2->setEnabled(false);
             ui->spinBox_5->setEnabled(true);
             ui->spinBox_5->setValue(0);
@@ -757,7 +757,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
             MainWindow::arme = 11;
             break;
         case 3:
-            ui->label_5->setText("Perforation M(D)");
+            ui->label_6->setText("Perforation M(D)");
             ui->checkBox_2->setEnabled(true);
             ui->spinBox_5->setValue(0);
             ui->spinBox_5->setEnabled(false);
@@ -766,7 +766,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
             MainWindow::arme = 12;
             break;
         case 4:
-            ui->label_5->setText("Perforation M(B)");
+            ui->label_6->setText("Perforation M(B)");
             ui->checkBox_2->setEnabled(true);
             ui->spinBox_5->setValue(0);
             ui->spinBox_5->setEnabled(false);
@@ -775,7 +775,7 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
             MainWindow::arme = 13;
             break;
         case 5:
-            ui->label_5->setText("Contusion(D) M(A))");
+            ui->label_6->setText("Contusion(D) M(A))");
             ui->checkBox_2->setEnabled(false);
             ui->spinBox_5->setValue(0);
             ui->spinBox_5->setEnabled(false);
@@ -803,28 +803,28 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->spinBox_4->setEnabled(false);
         switch(index.row()){
         case 0:
-            ui->label_5->setText("Taille Contusion(si grd ou énorme)");
+            ui->label_6->setText("Taille Contusion(si grd ou énorme)");
             break;
         case 1:
-            ui->label_5->setText("Perforation Taille(C)");
+            ui->label_6->setText("Perforation Taille(C)");
             break;
         case 2:
-            ui->label_5->setText("Taille Perforation(B, si grd ou énorme)");
+            ui->label_6->setText("Taille Perforation(B, si grd ou énorme)");
             break;
         case 3:
-            ui->label_5->setText("Perforation Contusion(C, si grd ou énorme)");
+            ui->label_6->setText("Perforation Contusion(C, si grd ou énorme)");
             break;
         case 4:
-            ui->label_5->setText("Taille(T)");
+            ui->label_6->setText("Taille(T)");
             break;
         case 5:
-            ui->label_5->setText("Contusion Contusion(si grd ou énorme)");
+            ui->label_6->setText("Contusion Contusion(si grd ou énorme)");
             break;
         case 6:
-            ui->label_5->setText("Contusion Contusion(si grd ou énorme)");
+            ui->label_6->setText("Contusion Contusion(si grd ou énorme)");
             break;
         case 7:
-            ui->label_5->setText("Déséquilibre(A)");
+            ui->label_6->setText("Déséquilibre(A)");
             break;
         default:
             break;
@@ -846,13 +846,13 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->spinBox_4->setEnabled(false);
         switch(index.row()){
         case 0:
-            ui->label_5->setText("Saisie Déséquilibre(C)");
+            ui->label_6->setText("Saisie Déséquilibre(C)");
             break;
         case 1:
-            ui->label_5->setText("Déséquilibre Contusion(C, si grd ou énorme)");
+            ui->label_6->setText("Déséquilibre Contusion(C, si grd ou énorme)");
             break;
         case 2:
-            ui->label_5->setText("Saisie(A)");
+            ui->label_6->setText("Saisie(A)");
             break;
         default:
             break;
@@ -870,42 +870,42 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->spinBox_4->setEnabled(true);
         switch(index.row()){
         case 0:
-            ui->label_5->setText("+BO sort base.\nCible statique: +10.\nA couvert: -10 à -30");
+            ui->label_6->setText("+BO sort base.\nCible statique: +10.\nA couvert: -10 à -30");
             AttackIndex = 6;
             for(int i = 0; i<3; i++)
               for(int j = 0; j<27; j++)
                 tableau[i][j] = const_cast<char*>(sorts[i][j]);
             break;
         case 1:
-            ui->label_5->setText("+BO sort base -bonus ag cible.\nA couvert: -10 à -80\nCible au centre zone effet: +20");
+            ui->label_6->setText("+BO sort base -bonus ag cible.\nA couvert: -10 à -80\nCible au centre zone effet: +20");
             AttackIndex = 7;
             for(int i = 0; i<5; i++)
               for(int j=0; j<26; j++)
                 tableau[i][j] = const_cast<char*>(boules[i][j]);
             break;
         case 2:
-            ui->label_5->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
+            ui->label_6->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
             AttackIndex = 8;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
                 tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
         case 3:
-            ui->label_5->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
+            ui->label_6->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
             AttackIndex = 9;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
                 tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
         case 4:
-            ui->label_5->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
+            ui->label_6->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
             AttackIndex = 10;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
                 tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
         case 5:
-            ui->label_5->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
+            ui->label_6->setText("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20");
             AttackIndex = 11;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
