@@ -3,7 +3,6 @@
 #include <QTranslator>
 #include <QScreen>
 #include <stdio.h>
-QRect screenGeometry;
 
 int main(int argc, char *argv[])
 {
@@ -12,9 +11,8 @@ int main(int argc, char *argv[])
     translator.load(QLocale(), QString("translations"), QString("_"), QString(":/languages"));
     a.installTranslator(&translator);
     MainWindow w;
-    QSize size = qApp->screens()[0]->size();
-    w.setGeometry(size.width(), size.height(), 1, 1);
+    QRect Geo = qApp->screens()[0]->geometry();
+    w.setGeometry(Geo);
     w.show();
-
     return a.exec();
 }

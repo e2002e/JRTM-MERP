@@ -3,8 +3,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-extern QRect screenGeometry;
-
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -20,6 +18,9 @@ MainWindow::MainWindow(QWidget *parent) :
         for(int j = 0;j<23;j++)
             MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::tranchantes[i][j]);
     }
+    QRect srcGeo = qApp->screens()[0]->geometry();
+    ui->centralWidget->setGeometry(srcGeo);
+    ui->centralWidget->updateGeometry();
 }
 
 MainWindow::~MainWindow()
