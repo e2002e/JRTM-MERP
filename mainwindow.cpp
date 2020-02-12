@@ -1329,7 +1329,7 @@ void MainWindow::on_pushButton_4_clicked()
     ui->dist->setText(zero);
 }
 
-void MainWindow::on_pushButton_5_clicked()
+void MainWindow::on_pushButton_6_clicked()
 {
     if(JR[ui->spinBox_15->value()-1][ui->spinBox_16->value()] > ui->spinBox_14->value())
       ui->label_40->setText("Resiste pas");

@@ -12,9 +12,8 @@ int main(int argc, char *argv[])
     translator.load(QLocale(), QString("translations"), QString("_"), QString(":/languages"));
     a.installTranslator(&translator);
     MainWindow w;
-    QScreen *screen = QGuiApplication::primaryScreen();
-    screenGeometry = screen->geometry();
-    w.setGeometry(screenGeometry);
+    QSize size = qApp->screens()[0]->size();
+    w.setGeometry(size.width(), size.height(), 1, 1);
     w.show();
 
     return a.exec();
