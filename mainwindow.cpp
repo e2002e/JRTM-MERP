@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include <QScreen>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
+extern QRect screenGeometry;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -12,10 +15,17 @@ MainWindow::MainWindow(QWidget *parent) :
     MainWindow::AttackIndex = 2;
     MainWindow::distance = 0;
     MainWindow::arme = 2;
+    //DELETE
     for(int i = 0; i<5;i++){
         for(int j = 0;j<23;j++)
             MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::tranchantes[i][j]);
     }
+    ui->centralWidget->setGeometry(screenGeometry);
+    ui->centralWidget->updateGeometry();
+    ui->tabWidget->setGeometry(screenGeometry);
+    ui->tabWidget->updateGeometry();
+    ui->groupBox->setGeometry(screenGeometry);
+    ui->groupBox->updateGeometry();
 }
 
 MainWindow::~MainWindow()
@@ -399,7 +409,8 @@ void MainWindow::do_result()
             if(step < 4)
                 step = 1;
             else step -= 2;
-            switch (ui->comboBox_5->currentIndex()) {
+            switch (ui->comboBox_5->currentIndex())
+            {
             case 0:
                 if(step > 9)
                     step = 9;
