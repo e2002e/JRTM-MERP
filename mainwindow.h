@@ -34,7 +34,7 @@ private slots:
 
     void on_radioButton_8_toggled(bool checked);
 
-    void on_radioButton_9_toggled(bool checked);
+    void on_checkBox_9_toggled(bool checked);
 
     void on_pushButton_clicked();
 

@@ -564,7 +564,7 @@ void MainWindow::on_radioButton_8_toggled(bool checked)
     MainWindow::stunned = checked;
 }
 
-void MainWindow::on_radioButton_9_toggled(bool checked)
+void MainWindow::on_checkBox_9_toggled(bool checked)
 {
     MainWindow::switches = checked;
 }
