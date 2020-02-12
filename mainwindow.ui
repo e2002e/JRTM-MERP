@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>746</width>
+    <width>720</width>
     <height>1280</height>
    </rect>
   </property>
@@ -65,6 +65,9 @@
         <height>0</height>
        </size>
       </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
@@ -76,7 +79,7 @@
         <string>Combats</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_4">
-        <item row="1" column="0" colspan="2">
+        <item row="1" column="0">
          <widget class="QGroupBox" name="groupBox_2">
           <property name="title">
            <string>Assaillant</string>
@@ -935,7 +938,7 @@ sort</string>
           </layout>
          </widget>
         </item>
-        <item row="3" column="0" colspan="2">
+        <item row="2" column="0" colspan="2">
          <widget class="QGroupBox" name="groupBox">
           <property name="title">
            <string>Défenseur</string>
