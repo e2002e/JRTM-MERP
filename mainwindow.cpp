@@ -20,12 +20,6 @@ MainWindow::MainWindow(QWidget *parent) :
         for(int j = 0;j<23;j++)
             MainWindow::tableau[i][j] = const_cast<char*>(MainWindow::tranchantes[i][j]);
     }
-    ui->centralWidget->setGeometry(screenGeometry);
-    ui->centralWidget->updateGeometry();
-    ui->tabWidget->setGeometry(screenGeometry);
-    ui->tabWidget->updateGeometry();
-    ui->groupBox->setGeometry(screenGeometry);
-    ui->groupBox->updateGeometry();
 }
 
 MainWindow::~MainWindow()
@@ -1337,10 +1331,10 @@ void MainWindow::on_pushButton_4_clicked()
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    if(JR[ui->spinBox_13->value()-1][ui->spinBox_12->value()] > ui->spinBox_11->value())
-      ui->label_38->setText("Resiste pas");
+    if(JR[ui->spinBox_15->value()-1][ui->spinBox_16->value()] > ui->spinBox_14->value())
+      ui->label_40->setText("Resiste pas");
     else
-      ui->label_38->setText("Resiste");
+      ui->label_40->setText("Resiste");
 }
 
 void MainWindow::on_checkBox_10_toggled(bool checked)
