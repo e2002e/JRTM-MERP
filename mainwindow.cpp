@@ -1286,22 +1286,24 @@ void MainWindow::on_pushButton_3_clicked()
       if(ui->checkBox_6->isChecked() == true ) jetA += 30;
       else if(ui->checkBox_7->isChecked() == true) jetA -= 30;
       }
-    if(ui->radioButton_12->isChecked()) jetA += 25;
-    if(ui->radioButton_13->isChecked()) jetA += 50;
+
     if(ui->radioButton_14->isChecked()) jetA += 100;
+    else
+    {
+        if(ui->radioButton_12->isChecked()) jetA += 25;
+        if(ui->radioButton_13->isChecked()) jetA += 50;
+    }
     jetA += terrain[ui->comboBox_3->currentIndex()];
     jetE += deplacement[ui->comboBox_4->currentIndex()];
     jetE += taille[ui->comboBox_6->currentIndex()];
 
     if(ui->groupBox_3->isChecked() == true){
-      if(ui->radioButton->isChecked() == true) jetE -= 20;
-      else if(ui->radioButton_4->isChecked() == true) jetE -= 40;
-      }
+        if(ui->radioButton->isChecked() == true) jetE -= 20;
+        else if(ui->radioButton_4->isChecked() == true) jetE -= 40;
+    }
 
-    if(jetE > 0)
-      jetA -= jetE;
-    else
-      jetA += jetE;
+    if(jetE > 0)//à verif si jet sans limites
+        jetA -= jetE;
 
     if(jetA < 31) step = 0;
     else if(jetA < 51) step = 1;

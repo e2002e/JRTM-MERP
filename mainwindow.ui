@@ -75,7 +75,7 @@
        <enum>Qt::LeftToRight</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab">
        <property name="enabled">
@@ -1866,11 +1866,10 @@ d'usage</string>
            <enum>QFrame::Sunken</enum>
           </property>
           <property name="text">
-           <string>Chaques tranches de 4 heures en voyage.
-on fait un jet d'activité et d'esquive.
-La distance parcourue et les
- éventuelles rencontres sont affichées.
-</string>
+           <string>Chaques tranches de 4 heures
+en voyage, on fait un jet d'activité
+et d'esquive.
+Maximum 16h de route/jour.</string>
           </property>
          </widget>
         </item>
