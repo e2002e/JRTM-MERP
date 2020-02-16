@@ -1262,7 +1262,7 @@ void MainWindow::on_pushButton_2_clicked()
     else if(result < 276) step = 21;
     else if(result > 275) step = 22;
 
-    ui->Result->setText(MainWindow::dynamiques[ui->comboBox->currentIndex()][step]);
+    ui->result->setText(MainWindow::dynamiques[ui->comboBox->currentIndex()][step]);
 }
 
 void MainWindow::on_pushButton_3_clicked()
