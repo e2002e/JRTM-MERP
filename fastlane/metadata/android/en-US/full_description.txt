@@ -1,0 +1,12 @@
+Merp is a role playing game on paper, that means there are players
+and a game master. The actions in-game involve a lookup in tables that has
+the benefit of making the results far more realistics than with a simple
+offensive/defensive bonus and a dice draw but has a drawback, that is the time
+and focusing energy needed to read through the tables on any action.
+With this helper you can avoid most of that:
+Fights: setting parameters followed by a button press yields the dealt damage and level of critic, need to lookup critics in the book.
+Dynamic actions: yields the corresponding number on the table, need to lookup dynamic action's fails. 
+Travels: all travel mechanism is included, you press 'travel' with the options (like density of population etc...) and the traveled distance is updated alongside the encounters symbols.
+Resistance draw: For resisting spells, the table is included and yields a 'resist/resists not'.
+
+As it is you will be interested mostly in the travel and fight mechanism.

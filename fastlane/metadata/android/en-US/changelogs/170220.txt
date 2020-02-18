@@ -1,0 +1,2 @@
+releasing a beta version:
+-The overall english translation is not reviewed and needs feedback.
