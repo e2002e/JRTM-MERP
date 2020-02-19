@@ -1,0 +1,3 @@
+MERP (MIDDLE EARTH ROLE PLAYING) HELPER Version 1.
+Read the full description as a manual.
+Still a few things to setup, but the app is functional.

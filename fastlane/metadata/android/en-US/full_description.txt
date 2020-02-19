@@ -1,0 +1,22 @@
+The app processes the game parameters throught the tables, and releases the GM
+from loss of time while doing calcultations and lookups.
+There is the fighting system, you still have to keep the order of the rounds
+and tracks of the characters yourself. If some option or result button is grayed,
+it means it's not possible according to the weapon type/distance.
+Travels are made easy, the symbols are like in the french book:
+./. before the slash means civilized creatures, after it stands for wildings.
+- nothing
+v seen
+r encounter
+h hostile
+a attacks
+p ambush
+the program is well labeled so that with the book along you,
+you can quickly find out how to use it. I did translate the book from french,
+I know it can be better, the best would be an english version owner doing the
+translates. The app doesn't exempt the game master from consulting the tables
+that include a full description like critics and blunders (noted M).
+The syntax of the description of the effect whether it be a spell, a weapon,
+or an attack from a creature: First Critic(Max) Second Critic(Max, condition).
+There is a Remainder tab for which I doubt the French edition's page number
+corresponds with the English one.
