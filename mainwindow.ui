@@ -86,7 +86,7 @@
        <enum>Qt::LeftToRight</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideRight</enum>
@@ -782,7 +782,7 @@ sort</string>
               <bool>true</bool>
              </property>
              <attribute name="headerVisible">
-              <bool>true</bool>
+              <bool>false</bool>
              </attribute>
              <attribute name="headerCascadingSectionResizes">
               <bool>false</bool>
@@ -1322,61 +1322,6 @@ d'usage</string>
              </property>
             </widget>
            </item>
-           <item row="0" column="0">
-            <widget class="QComboBox" name="comboBox">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <item>
-              <property name="text">
-               <string>Routine</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Aisée</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Facile</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Moyenne</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Difficile</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Trés difficile</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Extrèmement difficile</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Pure folie</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Absurde</string>
-              </property>
-             </item>
-            </widget>
-           </item>
            <item row="4" column="1">
             <widget class="QLabel" name="label_14">
              <property name="text">
@@ -1433,7 +1378,20 @@ d'usage</string>
              </property>
             </widget>
            </item>
-           <item row="0" column="1" colspan="2">
+           <item row="5" column="0" colspan="3">
+            <widget class="QLabel" name="label_5">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Result</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
             <widget class="QPushButton" name="pushButton_2">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -1446,17 +1404,59 @@ d'usage</string>
              </property>
             </widget>
            </item>
-           <item row="5" column="0" colspan="3">
-            <widget class="QLabel" name="label_5">
-             <property name="frameShape">
-              <enum>QFrame::Box</enum>
+           <item row="0" column="0" colspan="2">
+            <widget class="QComboBox" name="comboBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
-             <property name="text">
-              <string>Result</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
+             <item>
+              <property name="text">
+               <string>Routine</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Aisée</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Facile</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Moyenne</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Difficile</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Trés difficile</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Extrèmement difficile</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pure folie</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Absurde</string>
+              </property>
+             </item>
             </widget>
            </item>
           </layout>
@@ -1484,23 +1484,16 @@ d'usage</string>
              </property>
             </widget>
            </item>
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_42">
-             <property name="text">
-              <string>Attack lvl</string>
+           <item row="1" column="2">
+            <widget class="QSpinBox" name="spinBox_15">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
-             <property name="alignment">
-              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="label_41">
-             <property name="text">
-              <string>Target lvl</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             <property name="maximum">
+              <number>15</number>
              </property>
             </widget>
            </item>
@@ -1517,16 +1510,13 @@ d'usage</string>
              </property>
             </widget>
            </item>
-           <item row="1" column="2">
-            <widget class="QSpinBox" name="spinBox_15">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_41">
+             <property name="text">
+              <string>Target lvl</string>
              </property>
-             <property name="maximum">
-              <number>15</number>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
              </property>
             </widget>
            </item>
@@ -1546,7 +1536,17 @@ d'usage</string>
              </property>
             </widget>
            </item>
-           <item row="0" column="3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_42">
+             <property name="text">
+              <string>Attack lvl</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4" rowspan="2">
             <widget class="QPushButton" name="pushButton_6">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -1566,7 +1566,7 @@ d'usage</string>
              </property>
             </widget>
            </item>
-           <item row="1" column="3" rowspan="2">
+           <item row="2" column="4">
             <widget class="QLabel" name="label_40">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
