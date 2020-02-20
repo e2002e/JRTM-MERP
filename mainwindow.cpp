@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <QScreen>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 

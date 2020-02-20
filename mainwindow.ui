@@ -39,14 +39,14 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>fastlane/metadata/android/en-US/images/icon.png</normaloff>
-    <normalon>fastlane/metadata/android/en-US/images/icon.png</normalon>
-    <disabledoff>fastlane/metadata/android/en-US/images/icon.png</disabledoff>
-    <disabledon>fastlane/metadata/android/en-US/images/icon.png</disabledon>
-    <activeoff>fastlane/metadata/android/en-US/images/icon.png</activeoff>
-    <activeon>fastlane/metadata/android/en-US/images/icon.png</activeon>
-    <selectedoff>fastlane/metadata/android/en-US/images/icon.png</selectedoff>
-    <selectedon>fastlane/metadata/android/en-US/images/icon.png</selectedon>fastlane/metadata/android/en-US/images/icon.png</iconset>
+    <normaloff>ring.png</normaloff>
+    <normalon>ring.png</normalon>
+    <disabledoff>ring.png</disabledoff>
+    <disabledon>ring.png</disabledon>
+    <activeoff>ring.png</activeoff>
+    <activeon>ring.png</activeon>
+    <selectedoff>ring.png</selectedoff>
+    <selectedon>ring.png</selectedon>ring.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="enabled">
