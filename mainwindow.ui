@@ -64,7 +64,7 @@
      <height>0</height>
     </size>
    </property>
-   <layout class="QGridLayout" name="gridLayout_6">
+   <layout class="QGridLayout" name="gridLayout_5">
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="enabled">
@@ -98,7 +98,7 @@
        <attribute name="title">
         <string>Combats</string>
        </attribute>
-       <layout class="QGridLayout" name="gridLayout_5">
+       <layout class="QGridLayout" name="gridLayout_6">
         <item row="0" column="0">
          <widget class="QFrame" name="frame_2">
           <property name="frameShape">
@@ -390,6 +390,227 @@
           </layout>
          </widget>
         </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Défenseur</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="1" column="1">
+            <widget class="QRadioButton" name="radioButton_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Flanc</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QRadioButton" name="radioButton_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Derrière</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButton_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>bouclier</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="radioButton_7">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Surprit</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QRadioButton" name="radioButton_8">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Etourdi/au sol</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="text">
+              <string>Armure</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" colspan="2">
+            <widget class="QComboBox" name="comboBox_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QComboBox::AdjustToContents</enum>
+             </property>
+             <item>
+              <property name="text">
+               <string>Sans</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cuir souple</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cuir rigide</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Mailles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Plates</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
         <item row="2" column="0">
          <widget class="QGroupBox" name="groupBox_2">
           <property name="sizePolicy">
@@ -412,306 +633,7 @@
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
           <layout class="QGridLayout" name="gridLayout_12">
-           <item row="2" column="1">
-            <widget class="QCheckBox" name="checkBox_9">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Dégaine ou
-Change d'arme</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="QLabel" name="label_7">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string> * 10p parcourus &gt; 10p</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="4">
-            <widget class="QComboBox" name="comboBox_8">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="sizeAdjustPolicy">
-              <enum>QComboBox::AdjustToContents</enum>
-             </property>
-             <item>
-              <property name="text">
-               <string>0</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>1</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>2</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>3</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>4</string>
-              </property>
-             </item>
-            </widget>
-           </item>
-           <item row="1" column="2">
-            <widget class="QCheckBox" name="checkBox">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::LeftToRight</enum>
-             </property>
-             <property name="text">
-              <string>Arme lancée</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QCheckBox" name="checkBox_10">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>moitié de santé</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="2">
-            <widget class="QCheckBox" name="checkBox_2">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::LeftToRight</enum>
-             </property>
-             <property name="text">
-              <string>Sans recharger (projectiles)</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="3">
-            <widget class="QLabel" name="label_9">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <italic>false</italic>
-               <bold>false</bold>
-               <underline>false</underline>
-              </font>
-             </property>
-             <property name="text">
-              <string>Taille de
-l'attaque</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="4">
-            <widget class="QComboBox" name="comboBox_5">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::LeftToRight</enum>
-             </property>
-             <property name="sizeAdjustPolicy">
-              <enum>QComboBox::AdjustToContents</enum>
-             </property>
-             <item>
-              <property name="text">
-               <string>minuscule</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>petite</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>moyenne</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>grande</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>énormes</string>
-              </property>
-             </item>
-            </widget>
-           </item>
-           <item row="1" column="3">
-            <widget class="QLabel" name="label_34">
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <italic>false</italic>
-               <bold>false</bold>
-               <underline>false</underline>
-              </font>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::LeftToRight</enum>
-             </property>
-             <property name="text">
-              <string>rounds de
-préparation du
-sort</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QSpinBox" name="spinBox_5">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::LeftToRight</enum>
-             </property>
-             <property name="autoFillBackground">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0" colspan="2">
-            <widget class="QLabel" name="label_6">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::NoFrame</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-             <property name="text">
-              <string>Type(max) Maladresse(type(modif)/modif)</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0" colspan="5">
+           <item row="0" column="0" colspan="6">
             <widget class="QTreeWidget" name="treeWidget">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -745,7 +667,7 @@ sort</string>
               <enum>Qt::LeftToRight</enum>
              </property>
              <property name="frameShape">
-              <enum>QFrame::Panel</enum>
+              <enum>QFrame::NoFrame</enum>
              </property>
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
@@ -760,7 +682,10 @@ sort</string>
               <enum>Qt::ScrollBarAsNeeded</enum>
              </property>
              <property name="sizeAdjustPolicy">
-              <enum>QAbstractScrollArea::AdjustToContents</enum>
+              <enum>QAbstractScrollArea::AdjustIgnored</enum>
+             </property>
+             <property name="autoScroll">
+              <bool>false</bool>
              </property>
              <property name="autoScrollMargin">
               <number>20</number>
@@ -770,6 +695,9 @@ sort</string>
              </property>
              <property name="textElideMode">
               <enum>Qt::ElideNone</enum>
+             </property>
+             <property name="horizontalScrollMode">
+              <enum>QAbstractItemView::ScrollPerItem</enum>
              </property>
              <property name="indentation">
               <number>0</number>
@@ -790,7 +718,7 @@ sort</string>
               <bool>false</bool>
              </property>
              <property name="wordWrap">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="headerHidden">
               <bool>false</bool>
@@ -802,19 +730,19 @@ sort</string>
               <bool>true</bool>
              </attribute>
              <attribute name="headerCascadingSectionResizes">
-              <bool>false</bool>
+              <bool>true</bool>
              </attribute>
              <attribute name="headerMinimumSectionSize">
-              <number>100</number>
+              <number>50</number>
              </attribute>
              <attribute name="headerDefaultSectionSize">
-              <number>170</number>
+              <number>140</number>
              </attribute>
              <attribute name="headerHighlightSections">
               <bool>false</bool>
              </attribute>
              <attribute name="headerStretchLastSection">
-              <bool>true</bool>
+              <bool>false</bool>
              </attribute>
              <column>
               <property name="text">
@@ -1037,33 +965,289 @@ sort</string>
              </item>
             </widget>
            </item>
-          </layout>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QGroupBox" name="groupBox">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="title">
-           <string>Défenseur</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_11">
-           <item row="1" column="1">
-            <widget class="QRadioButton" name="radioButton_2">
+           <item row="1" column="0" colspan="6">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QSpinBox" name="spinBox_5">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string> * 10p parcourus &gt; 10p</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string>Arme lancée</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_34">
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                 <underline>false</underline>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string>rounds de
+préparation du
+sort</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_8">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QComboBox::AdjustToContents</enum>
+               </property>
+               <item>
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0" colspan="6">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QCheckBox" name="checkBox_10">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>moitié de santé</string>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Dégaine ou
+Change d'arme</string>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_2">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string>Sans recharger (projectiles)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                 <underline>false</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>Taille de
+l'attaque</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_5">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QComboBox::AdjustToContents</enum>
+               </property>
+               <item>
+                <property name="text">
+                 <string>minuscule</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>petite</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>moyenne</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>grande</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>énormes</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="4" column="0" colspan="2">
+            <widget class="QLabel" name="label_6">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                <horstretch>0</horstretch>
@@ -1075,187 +1259,17 @@ sort</string>
                <pointsize>8</pointsize>
                <weight>50</weight>
                <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Flanc</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="2">
-            <widget class="QRadioButton" name="radioButton_3">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Derrière</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0">
-            <widget class="QRadioButton" name="radioButton_6">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>bouclier</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QRadioButton" name="radioButton_7">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Surprit</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="3">
-            <widget class="QRadioButton" name="radioButton_8">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Etourdi/au sol</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="label_4">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="baseSize">
-              <size>
-               <width>0</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>8</pointsize>
-               <weight>50</weight>
-               <italic>false</italic>
-               <bold>false</bold>
-               <underline>false</underline>
               </font>
              </property>
              <property name="frameShape">
               <enum>QFrame::NoFrame</enum>
              </property>
              <property name="frameShadow">
-              <enum>QFrame::Sunken</enum>
+              <enum>QFrame::Raised</enum>
              </property>
              <property name="text">
-              <string>Armure</string>
+              <string>Type(max) Maladresse(type(modif)/modif)</string>
              </property>
-             <property name="scaledContents">
-              <bool>false</bool>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="2" colspan="2">
-            <widget class="QComboBox" name="comboBox_2">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="sizeAdjustPolicy">
-              <enum>QComboBox::AdjustToContents</enum>
-             </property>
-             <item>
-              <property name="text">
-               <string>Sans</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Cuir souple</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Cuir rigide</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Mailles</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Plates</string>
-              </property>
-             </item>
             </widget>
            </item>
           </layout>
@@ -2216,7 +2230,7 @@ Maximum 16h de route/jour.</string>
            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Cantarell';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
