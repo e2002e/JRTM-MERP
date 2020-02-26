@@ -16,7 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-RESOURCES += languages/
+RESOURCES += resources/
 SOURCES += \
     main.cpp \
     mainwindow.cpp
@@ -28,8 +28,8 @@ FORMS += \
     mainwindow.ui
 
 TRANSLATIONS += \
-    languages/translations_en.ts \
-    languages/translations_fr.ts
+    resources/languages/translations_en.ts \
+    resources/languages/translations_fr.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -44,11 +44,6 @@ DISTFILES += \
     android/gradlew \
     android/gradlew.bat \
     android/res/values/libs.xml \
-    android/res/drawable-ldpi/icon.png \
-    android/res/drawable-mdpi/icon.png \
-    android/res/drawable-hdpi/icon.png \
 
-contains(ANDROID_TARGET_ARCH,armeabi-v7a) {
-    ANDROID_PACKAGE_SOURCE_DIR = \
-        $$PWD/android
-}
+ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
+

@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     QTranslator translator;
-    translator.load(QLocale(), QString("translations"), QString("_"), QString(":/languages"));
+    translator.load(QLocale(), QString("translations"), QString("_"), QString(":/resources/languages"));
     a.installTranslator(&translator);
     MainWindow w;
     w.show();
