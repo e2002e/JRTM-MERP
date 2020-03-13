@@ -866,42 +866,42 @@ void MainWindow::on_treeWidget_clicked(const QModelIndex &index)
         ui->spinBox_4->setEnabled(true);
         switch(index.row()){
         case 0:
-            ui->label_6->setText(tr("+BO sort base.\nCible statique: +10.\nA couvert: -10 à -30"));
+            ui->label_6->setText(tr("+BO sort base. Cible statique: +10. A couvert: -10 à -30"));
             AttackIndex = 6;
             for(int i = 0; i<3; i++)
               for(int j = 0; j<27; j++)
                 tableau[i][j] = const_cast<char*>(sorts[i][j]);
             break;
         case 1:
-            ui->label_6->setText(tr("+BO sort base -bonus ag cible.\nA couvert: -10 à -80\nCible au centre zone effet: +20"));
+            ui->label_6->setText(tr("+BO sorts base - bonus ag cible. A couvert: -10 à -80. Cible au centre zone effet: +20"));
             AttackIndex = 7;
             for(int i = 0; i<5; i++)
               for(int j=0; j<26; j++)
                 tableau[i][j] = const_cast<char*>(boules[i][j]);
             break;
         case 2:
-            ui->label_6->setText(tr("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20"));
+            ui->label_6->setText(tr("+BO sorts dirigés - bonus ag cible. A couvert: -10 à -60. Cible utilise son bouclier: -20"));
             AttackIndex = 8;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
                 tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
         case 3:
-            ui->label_6->setText(tr("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20"));
+            ui->label_6->setText(tr("+BO sorts dirigés - bonus ag cible. A couvert: -10 à -60. Cible utilise son bouclier: -20"));
             AttackIndex = 9;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
                 tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
         case 4:
-            ui->label_6->setText(tr("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20"));
+            ui->label_6->setText(tr("+BO sorts dirigés - bonus ag cible. A couvert: -10 à -60. Cible utilise son bouclier: -20"));
             AttackIndex = 10;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)
                 tableau[i][j] = const_cast<char*>(eclairs[i][j]);
             break;
         case 5:
-            ui->label_6->setText(tr("+BO sort dirigés -bonus ag cible.\nA couvert: -10 à -60\nCible utilise son bouclier: -20"));
+            ui->label_6->setText(tr("+BO sorts dirigés - bonus ag cible. A couvert: -10 à -60. Cible utilise son bouclier: -20"));
             AttackIndex = 11;
             for(int i = 0; i<5; i++)
               for(int j=0; j<27; j++)

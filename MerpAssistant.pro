@@ -16,7 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-RESOURCES += resources/
+RESOURCES += languages
 SOURCES += \
     main.cpp \
     mainwindow.cpp
@@ -28,8 +28,8 @@ FORMS += \
     mainwindow.ui
 
 TRANSLATIONS += \
-    resources/languages/translations_en.ts \
-    resources/languages/translations_fr.ts
+    languages/translations_en.ts \
+    languages/translations_fr.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

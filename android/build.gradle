@@ -33,6 +33,9 @@ android {
      * updated by QtCreator and androiddeployqt tools.
      * Changing them manually might break the compilation!
      *******************************************************/
+	defaultConfig {
+	    resConfigs "en", "fr"
+    }
 
     compileSdkVersion androidCompileSdkVersion.toInteger()
 
