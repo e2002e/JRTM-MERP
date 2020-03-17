@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>784</width>
+    <width>804</width>
     <height>1280</height>
    </rect>
   </property>
@@ -641,25 +641,54 @@
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
           <layout class="QGridLayout" name="gridLayout_8">
-           <item row="4" column="0" colspan="5">
-            <widget class="QTreeWidget" name="treeWidget">
+           <item row="0" column="4">
+            <widget class="QComboBox" name="comboBox_8">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
              </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>0</height>
-              </size>
+             <property name="sizeAdjustPolicy">
+              <enum>QComboBox::AdjustToContents</enum>
              </property>
-             <property name="maximumSize">
-              <size>
-               <width>11111</width>
-               <height>11111</height>
-              </size>
+             <item>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="checkBox_10">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="font">
               <font>
@@ -668,312 +697,223 @@
                <bold>false</bold>
               </font>
              </property>
-             <property name="focusPolicy">
-              <enum>Qt::NoFocus</enum>
+             <property name="text">
+              <string>Moitié de santé</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
              </property>
              <property name="layoutDirection">
               <enum>Qt::LeftToRight</enum>
              </property>
-             <property name="frameShape">
-              <enum>QFrame::NoFrame</enum>
+             <property name="text">
+              <string>Sans recharger (projectiles)</string>
              </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLabel" name="label_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
-             <property name="midLineWidth">
-              <number>0</number>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+               <underline>false</underline>
+              </font>
              </property>
-             <property name="verticalScrollBarPolicy">
-              <enum>Qt::ScrollBarAsNeeded</enum>
+             <property name="text">
+              <string>Taille de
+l'attaque</string>
              </property>
-             <property name="horizontalScrollBarPolicy">
-              <enum>Qt::ScrollBarAsNeeded</enum>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string> * 10p parcourus &gt; 10p</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Dégaine ou
+Change d'arme</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="spinBox_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_34">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="text">
+              <string>Rounds de
+préparation: sort</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QComboBox" name="comboBox_5">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
              </property>
              <property name="sizeAdjustPolicy">
-              <enum>QAbstractScrollArea::AdjustIgnored</enum>
+              <enum>QComboBox::AdjustToContents</enum>
              </property>
-             <property name="autoScroll">
-              <bool>false</bool>
-             </property>
-             <property name="autoScrollMargin">
-              <number>20</number>
-             </property>
-             <property name="selectionBehavior">
-              <enum>QAbstractItemView::SelectItems</enum>
-             </property>
-             <property name="textElideMode">
-              <enum>Qt::ElideNone</enum>
-             </property>
-             <property name="horizontalScrollMode">
-              <enum>QAbstractItemView::ScrollPerPixel</enum>
-             </property>
-             <property name="indentation">
-              <number>0</number>
-             </property>
-             <property name="rootIsDecorated">
-              <bool>false</bool>
-             </property>
-             <property name="uniformRowHeights">
-              <bool>false</bool>
-             </property>
-             <property name="itemsExpandable">
-              <bool>false</bool>
-             </property>
-             <property name="sortingEnabled">
-              <bool>false</bool>
-             </property>
-             <property name="allColumnsShowFocus">
-              <bool>false</bool>
-             </property>
-             <property name="wordWrap">
-              <bool>false</bool>
-             </property>
-             <property name="headerHidden">
-              <bool>false</bool>
-             </property>
-             <property name="expandsOnDoubleClick">
-              <bool>false</bool>
-             </property>
-             <attribute name="headerVisible">
-              <bool>true</bool>
-             </attribute>
-             <attribute name="headerCascadingSectionResizes">
-              <bool>true</bool>
-             </attribute>
-             <attribute name="headerMinimumSectionSize">
-              <number>150</number>
-             </attribute>
-             <attribute name="headerDefaultSectionSize">
-              <number>150</number>
-             </attribute>
-             <attribute name="headerHighlightSections">
-              <bool>false</bool>
-             </attribute>
-             <attribute name="headerStretchLastSection">
-              <bool>true</bool>
-             </attribute>
-             <column>
-              <property name="text">
-               <string>Tranchantes</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>Contendantes</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>Deux mains</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>Projectiles</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>Griffes/dents</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>Saisie/déséquilibre</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>Sorts</string>
-              </property>
-             </column>
              <item>
               <property name="text">
-               <string>Cimeterre</string>
-              </property>
-              <property name="text">
-               <string>Filet</string>
-              </property>
-              <property name="text">
-               <string>Baton</string>
-              </property>
-              <property name="text">
-               <string>Bolas</string>
-              </property>
-              <property name="text">
-               <string>Pince/Bec</string>
-              </property>
-              <property name="text">
-               <string>Saisir/Avaller</string>
-              </property>
-              <property name="text">
-               <string>Base</string>
+               <string>minuscule</string>
               </property>
              </item>
              <item>
               <property name="text">
-               <string>Dague</string>
-              </property>
-              <property name="text">
-               <string>Fouet</string>
-              </property>
-              <property name="text">
-               <string>Epée à deux mains</string>
-              </property>
-              <property name="text">
-               <string>Arc Composite</string>
-              </property>
-              <property name="text">
-               <string>Morsure</string>
-              </property>
-              <property name="text">
-               <string>Bélier/Tête</string>
-              </property>
-              <property name="text">
-               <string>Boules</string>
+               <string>petite</string>
               </property>
              </item>
              <item>
               <property name="text">
-               <string>Epée courte</string>
-              </property>
-              <property name="text">
-               <string>Marteau de guerre</string>
-              </property>
-              <property name="text">
-               <string>Fléau d'armes</string>
-              </property>
-              <property name="text">
-               <string>Arbalète</string>
-              </property>
-              <property name="text">
-               <string>Griffe/serre</string>
-              </property>
-              <property name="text">
-               <string>Tacle/Plaquage</string>
-              </property>
-              <property name="text">
-               <string>Eclairs choquants</string>
+               <string>moyenne</string>
               </property>
              </item>
              <item>
               <property name="text">
-               <string>Epée longue</string>
-              </property>
-              <property name="text">
-               <string>Masse</string>
-              </property>
-              <property name="text">
-               <string>Hache de bataille</string>
-              </property>
-              <property name="text">
-               <string>Arc long</string>
-              </property>
-              <property name="text">
-               <string>Corne/Dard</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Eclairs d'eau</string>
+               <string>grande</string>
               </property>
              </item>
              <item>
               <property name="text">
-               <string>Hache</string>
-              </property>
-              <property name="text">
-               <string>Massue</string>
-              </property>
-              <property name="text">
-               <string>Hallebarde</string>
-              </property>
-              <property name="text">
-               <string>Arc court</string>
-              </property>
-              <property name="text">
-               <string>Minuscules</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Eclairs de glace</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Javelot</string>
-              </property>
-              <property name="text">
-               <string>Morgenstern</string>
-              </property>
-              <property name="text">
-               <string>Lance de cavalerie</string>
-              </property>
-              <property name="text">
-               <string>Fronde</string>
-              </property>
-              <property name="text">
-               <string>Piétinement</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Eclairs de feu &amp; foudroyants</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Lance</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Chute/Ecrasement</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Poing/Pied</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="text">
-               <string/>
+               <string>énormes</string>
               </property>
              </item>
             </widget>
            </item>
-           <item row="12" column="0" rowspan="3" colspan="5">
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="checkBox">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="text">
+              <string>Arme lancée</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="0" colspan="5">
             <widget class="QLabel" name="label_6">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -999,292 +939,339 @@
              </property>
             </widget>
            </item>
-           <item row="5" column="0" colspan="5">
-            <widget class="QFrame" name="frame">
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-             <layout class="QGridLayout" name="gridLayout_2">
-              <item row="0" column="4">
-               <widget class="QComboBox" name="comboBox_8">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="sizeAdjustPolicy">
-                 <enum>QComboBox::AdjustToContents</enum>
-                </property>
-                <item>
-                 <property name="text">
-                  <string>0</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>1</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>2</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>3</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>4</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
-              <item row="0" column="3">
-               <widget class="QLabel" name="label_34">
-                <property name="font">
-                 <font>
-                  <pointsize>11</pointsize>
-                  <weight>50</weight>
-                  <italic>false</italic>
-                  <bold>false</bold>
-                  <underline>false</underline>
-                 </font>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="text">
-                 <string>Rounds de
-préparation du
-sort</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="2">
-               <widget class="QCheckBox" name="checkBox">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>11</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
-                 </font>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="text">
-                 <string>Arme lancée</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0">
-               <widget class="QLabel" name="label_7">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>11</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string> * 10p parcourus &gt; 10p</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="1">
-               <widget class="QSpinBox" name="spinBox_5">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="autoFillBackground">
-                 <bool>false</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="4">
-               <widget class="QComboBox" name="comboBox_5">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="sizeAdjustPolicy">
-                 <enum>QComboBox::AdjustToContents</enum>
-                </property>
-                <item>
-                 <property name="text">
-                  <string>minuscule</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>petite</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>moyenne</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>grande</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>énormes</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
-              <item row="1" column="3">
-               <widget class="QLabel" name="label_9">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>11</pointsize>
-                  <weight>50</weight>
-                  <italic>false</italic>
-                  <bold>false</bold>
-                  <underline>false</underline>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Taille de
-l'attaque</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="2">
-               <widget class="QCheckBox" name="checkBox_10">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>11</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Moitié de santé</string>
-                </property>
-                <property name="autoExclusive">
-                 <bool>false</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="1">
-               <widget class="QCheckBox" name="checkBox_2">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>11</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
-                 </font>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="text">
-                 <string>Sans recharger (projectiles)</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0">
-               <widget class="QCheckBox" name="checkBox_9">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>11</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Dégaine ou
-Change d'arme</string>
-                </property>
-                <property name="autoExclusive">
-                 <bool>false</bool>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-           </item>
           </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QTreeWidget" name="treeWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>11111</width>
+            <height>11111</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <property name="midLineWidth">
+           <number>0</number>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          </property>
+          <property name="autoScroll">
+           <bool>false</bool>
+          </property>
+          <property name="autoScrollMargin">
+           <number>20</number>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectItems</enum>
+          </property>
+          <property name="textElideMode">
+           <enum>Qt::ElideNone</enum>
+          </property>
+          <property name="horizontalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <property name="indentation">
+           <number>0</number>
+          </property>
+          <property name="rootIsDecorated">
+           <bool>false</bool>
+          </property>
+          <property name="uniformRowHeights">
+           <bool>false</bool>
+          </property>
+          <property name="itemsExpandable">
+           <bool>false</bool>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="allColumnsShowFocus">
+           <bool>false</bool>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+          <property name="headerHidden">
+           <bool>false</bool>
+          </property>
+          <property name="expandsOnDoubleClick">
+           <bool>false</bool>
+          </property>
+          <attribute name="headerVisible">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="headerCascadingSectionResizes">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="headerMinimumSectionSize">
+           <number>150</number>
+          </attribute>
+          <attribute name="headerDefaultSectionSize">
+           <number>150</number>
+          </attribute>
+          <attribute name="headerHighlightSections">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="headerStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Tranchantes</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Contendantes</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Deux mains</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Projectiles</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Griffes/dents</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Saisie/déséquilibre</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Sorts</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>Cimeterre</string>
+           </property>
+           <property name="text">
+            <string>Filet</string>
+           </property>
+           <property name="text">
+            <string>Baton</string>
+           </property>
+           <property name="text">
+            <string>Bolas</string>
+           </property>
+           <property name="text">
+            <string>Pince/Bec</string>
+           </property>
+           <property name="text">
+            <string>Saisir/Avaller</string>
+           </property>
+           <property name="text">
+            <string>Base</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Dague</string>
+           </property>
+           <property name="text">
+            <string>Fouet</string>
+           </property>
+           <property name="text">
+            <string>Epée à deux mains</string>
+           </property>
+           <property name="text">
+            <string>Arc Composite</string>
+           </property>
+           <property name="text">
+            <string>Morsure</string>
+           </property>
+           <property name="text">
+            <string>Bélier/Tête</string>
+           </property>
+           <property name="text">
+            <string>Boules</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Epée courte</string>
+           </property>
+           <property name="text">
+            <string>Marteau de guerre</string>
+           </property>
+           <property name="text">
+            <string>Fléau d'armes</string>
+           </property>
+           <property name="text">
+            <string>Arbalète</string>
+           </property>
+           <property name="text">
+            <string>Griffe/serre</string>
+           </property>
+           <property name="text">
+            <string>Tacle/Plaquage</string>
+           </property>
+           <property name="text">
+            <string>Eclairs choquants</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Epée longue</string>
+           </property>
+           <property name="text">
+            <string>Masse</string>
+           </property>
+           <property name="text">
+            <string>Hache de bataille</string>
+           </property>
+           <property name="text">
+            <string>Arc long</string>
+           </property>
+           <property name="text">
+            <string>Corne/Dard</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Eclairs d'eau</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hache</string>
+           </property>
+           <property name="text">
+            <string>Massue</string>
+           </property>
+           <property name="text">
+            <string>Hallebarde</string>
+           </property>
+           <property name="text">
+            <string>Arc court</string>
+           </property>
+           <property name="text">
+            <string>Minuscules</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Eclairs de glace</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Javelot</string>
+           </property>
+           <property name="text">
+            <string>Morgenstern</string>
+           </property>
+           <property name="text">
+            <string>Lance de cavalerie</string>
+           </property>
+           <property name="text">
+            <string>Fronde</string>
+           </property>
+           <property name="text">
+            <string>Piétinement</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Eclairs de feu &amp; foudroyants</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Lance</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Chute/Ecrasement</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Poing/Pied</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
          </widget>
         </item>
        </layout>

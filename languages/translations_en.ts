@@ -8,7 +8,7 @@
         <translation type="vanished">MERP</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="99"/>
+        <location filename="../mainwindow.ui" line="104"/>
         <source>Combats</source>
         <translation>Fights</translation>
     </message>
@@ -17,27 +17,27 @@
         <translation type="vanished">Distance (feet)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="483"/>
+        <location filename="../mainwindow.ui" line="476"/>
         <source>Armure</source>
         <translation>Armor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="645"/>
+        <location filename="../mainwindow.ui" line="638"/>
         <source>Assaillant</source>
         <translation>Attacker</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="787"/>
+        <location filename="../mainwindow.ui" line="1098"/>
         <source>Arme lancée</source>
         <translation>Thrown weapon</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="816"/>
+        <location filename="../mainwindow.ui" line="1256"/>
         <source>Sans recharger (projectiles)</source>
         <translation>No-reload shot</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="757"/>
+        <location filename="../mainwindow.ui" line="1203"/>
         <source>Taille de
 l&apos;attaque</source>
         <translation>Attack size</translation>
@@ -49,13 +49,13 @@ sort</source>
         <translation type="vanished">rounds preparing spell</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="946"/>
+        <location filename="../mainwindow.ui" line="1121"/>
         <source> * 10p parcourus &gt; 10p</source>
         <translation>Slices of 10ft walked (beyond 10ft)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="119"/>
-        <location filename="../mainwindow.ui" line="1119"/>
+        <location filename="../mainwindow.ui" line="115"/>
+        <location filename="../mainwindow.ui" line="810"/>
         <source>Base</source>
         <translation></translation>
     </message>
@@ -65,22 +65,22 @@ sort</source>
         <translation>Merp Assistant</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="309"/>
+        <location filename="../mainwindow.ui" line="305"/>
         <source>Distance en pieds</source>
         <translation>Distance in feet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="509"/>
+        <location filename="../mainwindow.ui" line="502"/>
         <source>Bouclier</source>
         <translation>Shield</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="732"/>
+        <location filename="../mainwindow.ui" line="1227"/>
         <source>Moitié de santé</source>
         <translation>Half health</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="851"/>
+        <location filename="../mainwindow.ui" line="1067"/>
         <source>Rounds de
 préparation du
 sort</source>
@@ -112,67 +112,67 @@ spell</translation>
         <translation type="vanished">grab/stagger</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1096"/>
+        <location filename="../mainwindow.ui" line="787"/>
         <source>Sorts</source>
         <translation>Spells</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1101"/>
+        <location filename="../mainwindow.ui" line="792"/>
         <source>Cimeterre</source>
         <translation>Scimitar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1104"/>
+        <location filename="../mainwindow.ui" line="795"/>
         <source>Filet</source>
         <translation>Net</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1107"/>
+        <location filename="../mainwindow.ui" line="798"/>
         <source>Baton</source>
         <translation>Staff</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1110"/>
+        <location filename="../mainwindow.ui" line="801"/>
         <source>Bolas</source>
         <translation>Bolas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1113"/>
+        <location filename="../mainwindow.ui" line="804"/>
         <source>Pince/Bec</source>
         <translation>Claws/beak</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1116"/>
+        <location filename="../mainwindow.ui" line="807"/>
         <source>Saisir/Avaller</source>
         <translation>Grab/swallow</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1124"/>
+        <location filename="../mainwindow.ui" line="815"/>
         <source>Dague</source>
         <translation>Dager</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1127"/>
+        <location filename="../mainwindow.ui" line="818"/>
         <source>Fouet</source>
         <translation>Whip</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1130"/>
+        <location filename="../mainwindow.ui" line="821"/>
         <source>Epée à deux mains</source>
         <translation>Two handed sword</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1133"/>
+        <location filename="../mainwindow.ui" line="824"/>
         <source>Arc Composite</source>
         <translation>Composite bow</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1136"/>
+        <location filename="../mainwindow.ui" line="827"/>
         <source>Morsure</source>
         <translation>Bite</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1139"/>
+        <location filename="../mainwindow.ui" line="830"/>
         <source>Bélier/Tête</source>
         <translation>Battering/push</translation>
     </message>
@@ -181,32 +181,32 @@ spell</translation>
         <translation type="vanished">balls</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1147"/>
+        <location filename="../mainwindow.ui" line="838"/>
         <source>Epée courte</source>
         <translation>Short sword</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1150"/>
+        <location filename="../mainwindow.ui" line="841"/>
         <source>Marteau de guerre</source>
         <translation>Warhammer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1153"/>
+        <location filename="../mainwindow.ui" line="844"/>
         <source>Fléau d&apos;armes</source>
         <translation>Flail</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1156"/>
+        <location filename="../mainwindow.ui" line="847"/>
         <source>Arbalète</source>
         <translation>Crossbow</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1159"/>
+        <location filename="../mainwindow.ui" line="850"/>
         <source>Griffe/serre</source>
         <translation>Claws</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1162"/>
+        <location filename="../mainwindow.ui" line="853"/>
         <source>Tacle/Plaquage</source>
         <translation>Tackle</translation>
     </message>
@@ -215,27 +215,27 @@ spell</translation>
         <translation type="vanished">chocking bolt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1170"/>
+        <location filename="../mainwindow.ui" line="861"/>
         <source>Epée longue</source>
         <translation>Long sword</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1173"/>
+        <location filename="../mainwindow.ui" line="864"/>
         <source>Masse</source>
         <translation>Mass</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1176"/>
+        <location filename="../mainwindow.ui" line="867"/>
         <source>Hache de bataille</source>
         <translation>Waraxe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1179"/>
+        <location filename="../mainwindow.ui" line="870"/>
         <source>Arc long</source>
         <translation>Long bow</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1182"/>
+        <location filename="../mainwindow.ui" line="873"/>
         <source>Corne/Dard</source>
         <translation>Horn/Sting</translation>
     </message>
@@ -244,27 +244,27 @@ spell</translation>
         <translation type="vanished">water bolt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1193"/>
+        <location filename="../mainwindow.ui" line="884"/>
         <source>Hache</source>
         <translation>Axe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1196"/>
+        <location filename="../mainwindow.ui" line="887"/>
         <source>Massue</source>
         <translation>mace</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1199"/>
+        <location filename="../mainwindow.ui" line="890"/>
         <source>Hallebarde</source>
         <translation>Halberd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1202"/>
+        <location filename="../mainwindow.ui" line="893"/>
         <source>Arc court</source>
         <translation>Short bow</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1205"/>
+        <location filename="../mainwindow.ui" line="896"/>
         <source>Minuscules</source>
         <translation>Tiny</translation>
     </message>
@@ -273,27 +273,27 @@ spell</translation>
         <translation type="vanished">freezing bolt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1216"/>
+        <location filename="../mainwindow.ui" line="907"/>
         <source>Javelot</source>
         <translation>Javelin</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1219"/>
+        <location filename="../mainwindow.ui" line="910"/>
         <source>Morgenstern</source>
         <translation>Morgenstern</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1222"/>
+        <location filename="../mainwindow.ui" line="913"/>
         <source>Lance de cavalerie</source>
         <translation>Cavalry spear</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1225"/>
+        <location filename="../mainwindow.ui" line="916"/>
         <source>Fronde</source>
         <translation>Sling</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1228"/>
+        <location filename="../mainwindow.ui" line="919"/>
         <source>Piétinement</source>
         <translation>Trampling</translation>
     </message>
@@ -302,33 +302,34 @@ spell</translation>
         <translation type="vanished">lighning/fire bolt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1239"/>
+        <location filename="../mainwindow.ui" line="930"/>
         <source>Lance</source>
         <translation>Spear</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1251"/>
+        <location filename="../mainwindow.ui" line="942"/>
         <source>Chute/Ecrasement</source>
         <translation>Fall/crush</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1274"/>
+        <location filename="../mainwindow.ui" line="965"/>
         <source>Poing/Pied</source>
         <translation>Hand/feet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1430"/>
-        <location filename="../mainwindow.ui" line="1653"/>
+        <location filename="../mainwindow.ui" line="152"/>
+        <location filename="../mainwindow.ui" line="1453"/>
+        <location filename="../mainwindow.ui" line="1676"/>
         <source>Resultat</source>
         <translation>Result</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1454"/>
+        <location filename="../mainwindow.ui" line="1477"/>
         <source>action dynamique</source>
         <translation>dynamic action</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2168"/>
+        <location filename="../mainwindow.ui" line="2205"/>
         <source>Voyage</source>
         <translation>Travel</translation>
     </message>
@@ -354,27 +355,27 @@ l&apos;attaque:</source>
         <translation type="vanished">attack&apos;s size</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="905"/>
+        <location filename="../mainwindow.ui" line="1160"/>
         <source>minuscule</source>
         <translation>tiny</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="910"/>
+        <location filename="../mainwindow.ui" line="1165"/>
         <source>petite</source>
         <translation>small</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="915"/>
+        <location filename="../mainwindow.ui" line="1170"/>
         <source>moyenne</source>
         <translation>medium</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="920"/>
+        <location filename="../mainwindow.ui" line="1175"/>
         <source>grande</source>
         <translation>big</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="925"/>
+        <location filename="../mainwindow.ui" line="1180"/>
         <source>énormes</source>
         <translation>huge</translation>
     </message>
@@ -385,54 +386,54 @@ sort:</source>
         <translation type="vanished">rounds préparing spell</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="691"/>
-        <location filename="../mainwindow.ui" line="2220"/>
+        <location filename="../mainwindow.ui" line="1027"/>
+        <location filename="../mainwindow.ui" line="2257"/>
         <source>0</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="696"/>
+        <location filename="../mainwindow.ui" line="1032"/>
         <source>1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="701"/>
+        <location filename="../mainwindow.ui" line="1037"/>
         <source>2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="706"/>
+        <location filename="../mainwindow.ui" line="1042"/>
         <source>3</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="711"/>
+        <location filename="../mainwindow.ui" line="1047"/>
         <source>4</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="882"/>
+        <location filename="../mainwindow.ui" line="998"/>
         <source>Type(max) Maladresse(type(modif)/modif)</source>
         <translation>Type(max) clumsiness(type(modif)/modif))</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="235"/>
+        <location filename="../mainwindow.ui" line="231"/>
         <source>BD</source>
         <translation>DB</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="180"/>
+        <location filename="../mainwindow.ui" line="176"/>
         <source>Attaque/sort</source>
         <translation>Attack/Spell</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="206"/>
+        <location filename="../mainwindow.ui" line="202"/>
         <source>BO</source>
         <translation>OB</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="341"/>
-        <location filename="../mainwindow.ui" line="1570"/>
+        <location filename="../mainwindow.ui" line="337"/>
+        <location filename="../mainwindow.ui" line="1593"/>
         <source>Jet</source>
         <translation>Draw</translation>
     </message>
@@ -441,27 +442,27 @@ sort:</source>
         <translation type="vanished">Armor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="578"/>
+        <location filename="../mainwindow.ui" line="571"/>
         <source>Sans</source>
         <translation>Without</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="583"/>
+        <location filename="../mainwindow.ui" line="576"/>
         <source>Cuir souple</source>
         <translation>Light leather</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="588"/>
+        <location filename="../mainwindow.ui" line="581"/>
         <source>Cuir rigide</source>
         <translation>Rigid leather</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="593"/>
+        <location filename="../mainwindow.ui" line="586"/>
         <source>Mailles</source>
         <translation>Mail</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="598"/>
+        <location filename="../mainwindow.ui" line="591"/>
         <source>Plates</source>
         <translation>Plates</translation>
     </message>
@@ -470,9 +471,8 @@ sort:</source>
         <translation type="vanished">feet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="156"/>
         <source>Result</source>
-        <translation>Result</translation>
+        <translation type="vanished">Result</translation>
     </message>
     <message>
         <source>Attaquant</source>
@@ -499,27 +499,27 @@ sort:</source>
         <translation type="vanished">No rounds reloading</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="424"/>
+        <location filename="../mainwindow.ui" line="417"/>
         <source>Défenseur</source>
         <translation>Defender</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="446"/>
+        <location filename="../mainwindow.ui" line="439"/>
         <source>Flanc</source>
         <translation>Flanked</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="532"/>
+        <location filename="../mainwindow.ui" line="525"/>
         <source>Derrière</source>
         <translation>Reared</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="619"/>
+        <location filename="../mainwindow.ui" line="612"/>
         <source>Etourdi/au sol</source>
         <translation>Stunned/on the ground</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="555"/>
+        <location filename="../mainwindow.ui" line="548"/>
         <source>Surprit</source>
         <translation>Surprised</translation>
     </message>
@@ -528,7 +528,7 @@ sort:</source>
         <translation type="vanished">shield</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1630"/>
+        <location filename="../mainwindow.ui" line="1653"/>
         <source>JR</source>
         <translation>Draw of Resistance</translation>
     </message>
@@ -541,17 +541,16 @@ sort:</source>
         <translation type="vanished">Attack lvl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1289"/>
         <source>Maneuvres</source>
-        <translation>Manoeuvres/RD</translation>
+        <translation type="vanished">Manoeuvres/RD</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1331"/>
+        <location filename="../mainwindow.ui" line="1342"/>
         <source>Etourdi</source>
         <translation>Stunned</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1420"/>
+        <location filename="../mainwindow.ui" line="1443"/>
         <source>Tombé</source>
         <translation>Fallen</translation>
     </message>
@@ -564,52 +563,52 @@ sort:</source>
         <translation type="vanished">Skill of Manoeuvre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1468"/>
+        <location filename="../mainwindow.ui" line="1491"/>
         <source>Routine</source>
         <translation>Usual</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1473"/>
+        <location filename="../mainwindow.ui" line="1496"/>
         <source>Aisée</source>
         <translation>Very easy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1478"/>
+        <location filename="../mainwindow.ui" line="1501"/>
         <source>Facile</source>
         <translation>Easy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1483"/>
+        <location filename="../mainwindow.ui" line="1506"/>
         <source>Moyenne</source>
         <translation>Average</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1488"/>
+        <location filename="../mainwindow.ui" line="1511"/>
         <source>Difficile</source>
         <translation>Hard</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1493"/>
+        <location filename="../mainwindow.ui" line="1516"/>
         <source>Trés difficile</source>
         <translation>Very hard</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1498"/>
+        <location filename="../mainwindow.ui" line="1521"/>
         <source>Extrèmement difficile</source>
         <translation>Extremely difficult</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1503"/>
+        <location filename="../mainwindow.ui" line="1526"/>
         <source>Pure folie</source>
         <translation>Madness</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1508"/>
+        <location filename="../mainwindow.ui" line="1531"/>
         <source>Absurde</source>
         <translation>Absurd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1344"/>
+        <location filename="../mainwindow.ui" line="1361"/>
         <source>Membre hors
 d&apos;usage</source>
         <translation>Unusable limb</translation>
@@ -619,12 +618,12 @@ d&apos;usage</source>
         <translation type="vanished">Dynamic actions</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1667"/>
+        <location filename="../mainwindow.ui" line="1690"/>
         <source>Stratégie</source>
         <translation>Strategy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1911"/>
+        <location filename="../mainwindow.ui" line="1934"/>
         <source>Au campement</source>
         <translation>In camp</translation>
     </message>
@@ -645,7 +644,7 @@ d&apos;usage</source>
         <translation type="vanished">Merp assistant</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="667"/>
+        <location filename="../mainwindow.ui" line="1276"/>
         <source>Dégaine ou
 Change d&apos;arme</source>
         <translation>Draws or
@@ -668,32 +667,32 @@ Switches weapon</translation>
         <translation type="vanished">two</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2027"/>
+        <location filename="../mainwindow.ui" line="2064"/>
         <source>3-4</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2032"/>
+        <location filename="../mainwindow.ui" line="2069"/>
         <source>5-7</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2037"/>
+        <location filename="../mainwindow.ui" line="2074"/>
         <source>8-10</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2042"/>
+        <location filename="../mainwindow.ui" line="2079"/>
         <source>11-20</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2047"/>
+        <location filename="../mainwindow.ui" line="2084"/>
         <source>21-50</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2052"/>
+        <location filename="../mainwindow.ui" line="2089"/>
         <source>51+</source>
         <translation></translation>
     </message>
@@ -702,57 +701,57 @@ Switches weapon</translation>
         <translation type="vanished">Movement</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1982"/>
+        <location filename="../mainwindow.ui" line="2019"/>
         <source>Dense</source>
         <translation>Dense</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1987"/>
+        <location filename="../mainwindow.ui" line="2024"/>
         <source>Modéré</source>
         <translation>Moderate</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1992"/>
+        <location filename="../mainwindow.ui" line="2029"/>
         <source>Faible</source>
         <translation>Low</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1997"/>
+        <location filename="../mainwindow.ui" line="2034"/>
         <source>Eparse</source>
         <translation>Scattered</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2002"/>
+        <location filename="../mainwindow.ui" line="2039"/>
         <source>Désertique</source>
         <translation>Desertic</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2067"/>
+        <location filename="../mainwindow.ui" line="2104"/>
         <source>Route</source>
         <translation>Road</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2072"/>
+        <location filename="../mainwindow.ui" line="2109"/>
         <source>Dégagé</source>
         <translation>Clear</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2077"/>
+        <location filename="../mainwindow.ui" line="2114"/>
         <source>Forêt</source>
         <translation>Forest</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2082"/>
+        <location filename="../mainwindow.ui" line="2119"/>
         <source>Accidenté</source>
         <translation>Rough</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2087"/>
+        <location filename="../mainwindow.ui" line="2124"/>
         <source>Accidenté et boisé</source>
         <translation>Rought forêt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2092"/>
+        <location filename="../mainwindow.ui" line="2129"/>
         <source>Montagneux</source>
         <translation>Montain</translation>
     </message>
@@ -761,7 +760,7 @@ Switches weapon</translation>
         <translation type="vanished">Activity/Avoidance</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1820"/>
+        <location filename="../mainwindow.ui" line="1843"/>
         <source>Activitée</source>
         <translation>Activity</translation>
     </message>
@@ -786,37 +785,37 @@ La distance parcourue et les
         <translation type="vanished">Every 4 hours while travelling you do a draw of activity and avoidance.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1747"/>
+        <location filename="../mainwindow.ui" line="1770"/>
         <source>-</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2107"/>
+        <location filename="../mainwindow.ui" line="2144"/>
         <source>Normal</source>
         <translation>Normal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2112"/>
+        <location filename="../mainwindow.ui" line="2149"/>
         <source>Furtif</source>
         <translation>Furtive</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2117"/>
+        <location filename="../mainwindow.ui" line="2154"/>
         <source>Précautionneux</source>
         <translation>Careful</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2122"/>
+        <location filename="../mainwindow.ui" line="2159"/>
         <source>Accéléré</source>
         <translation>Fast</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2127"/>
+        <location filename="../mainwindow.ui" line="2164"/>
         <source>Lente chevauchée</source>
         <translation>Slow riding</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2132"/>
+        <location filename="../mainwindow.ui" line="2169"/>
         <source>Chevauchée rapide</source>
         <translation>Fast riding</translation>
     </message>
@@ -833,57 +832,57 @@ La distance parcourue et les
         <translation type="vanished">nyctalope at daytime</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2189"/>
+        <location filename="../mainwindow.ui" line="2226"/>
         <source>Reset</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2205"/>
+        <location filename="../mainwindow.ui" line="2242"/>
         <source>Distance parcourue:</source>
         <translation>Travelled distance</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2238"/>
+        <location filename="../mainwindow.ui" line="2275"/>
         <source>Km</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2251"/>
+        <location filename="../mainwindow.ui" line="2288"/>
         <source>Rencontres</source>
         <translation>Encounters</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1385"/>
+        <location filename="../mainwindow.ui" line="1402"/>
         <source>Déplacement +</source>
         <translation>Movement</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1524"/>
+        <location filename="../mainwindow.ui" line="1547"/>
         <source>Jets de résistance</source>
         <translation>Resistance draw</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1300"/>
+        <location filename="../mainwindow.ui" line="1305"/>
         <source>Manoeuvres dynamiques</source>
         <translation>Dynamic actions</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1371"/>
+        <location filename="../mainwindow.ui" line="1388"/>
         <source>Compétence</source>
         <translation>Skill</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1378"/>
+        <location filename="../mainwindow.ui" line="1395"/>
         <source>Jet +</source>
         <translation>Draw</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1759"/>
+        <location filename="../mainwindow.ui" line="1782"/>
         <source>Jets Activité/Esquive</source>
         <translation>Draw of activity/avoidance</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1896"/>
+        <location filename="../mainwindow.ui" line="1919"/>
         <source>Chaques tranches de 4 heures
 en voyage, on fait un jet d&apos;activité
 et d&apos;esquive.
@@ -893,7 +892,7 @@ an activity/avoidance draw.
 Max 16h on the road for a day.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1969"/>
+        <location filename="../mainwindow.ui" line="2006"/>
         <source>Déplacement - populations - taille du groupe - terrain</source>
         <translation>Movement - Populatation- group size- land</translation>
     </message>
@@ -902,7 +901,7 @@ Max 16h on the road for a day.</translation>
         <translation type="vanished">Travel</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2268"/>
+        <location filename="../mainwindow.ui" line="2305"/>
         <source>Pense bête</source>
         <translation>Reminder</translation>
     </message>
@@ -935,156 +934,161 @@ If healings cure fatal wound or put the health back to positive:
         <translation type="vanished">Various</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2440"/>
+        <location filename="../mainwindow.ui" line="2477"/>
         <source>Animaux &amp; Créatures p280/281</source>
         <translation>Animals and beast p280/281</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2470"/>
+        <location filename="../mainwindow.ui" line="2507"/>
         <source>Manoeuvres p270/271</source>
         <translation>Manoeuvres p270/271</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2425"/>
+        <location filename="../mainwindow.ui" line="2462"/>
         <source>Echecs &amp; maladresses p269</source>
         <translation>Fails and blunders p269</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1066"/>
+        <location filename="../mainwindow.ui" line="757"/>
         <source>Tranchantes</source>
         <translation>Cutting</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1071"/>
+        <location filename="../mainwindow.ui" line="762"/>
         <source>Contendantes</source>
         <translation>Blunt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1076"/>
+        <location filename="../mainwindow.ui" line="767"/>
         <source>Deux mains</source>
         <translation>Two handed</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1081"/>
+        <location filename="../mainwindow.ui" line="772"/>
         <source>Projectiles</source>
         <translation>Projectiles</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1086"/>
+        <location filename="../mainwindow.ui" line="777"/>
         <source>Griffes/dents</source>
         <translation>Claws/teeth</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1091"/>
+        <location filename="../mainwindow.ui" line="782"/>
         <source>Saisie/déséquilibre</source>
         <translation>Grab/staggering</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1142"/>
+        <location filename="../mainwindow.ui" line="833"/>
         <source>Boules</source>
         <translation>Balls</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1165"/>
+        <location filename="../mainwindow.ui" line="856"/>
         <source>Eclairs choquants</source>
         <translation>Shocking bolts</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1188"/>
+        <location filename="../mainwindow.ui" line="879"/>
         <source>Eclairs d&apos;eau</source>
         <translation>Water bolts</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1211"/>
+        <location filename="../mainwindow.ui" line="902"/>
         <source>Eclairs de glace</source>
         <translation>Frozen bolts</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1234"/>
+        <location filename="../mainwindow.ui" line="925"/>
         <source>Eclairs de feu &amp; foudroyants</source>
         <translation>Fire and electric bolts</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1580"/>
+        <location filename="../mainwindow.ui" line="1294"/>
+        <source>Manoeuvres</source>
+        <translation>Dynamic actions/RD</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1603"/>
         <source>Niveau cible</source>
         <translation>Target level</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1606"/>
+        <location filename="../mainwindow.ui" line="1629"/>
         <source>Niveau lanceur</source>
         <translation>Caster level</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1680"/>
+        <location filename="../mainwindow.ui" line="1703"/>
         <source>Vision des habitants</source>
         <translation>Inhabitants vision</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1705"/>
+        <location filename="../mainwindow.ui" line="1728"/>
         <source>Nyctalope nuit</source>
         <translation>Nyctalop night</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1734"/>
+        <location filename="../mainwindow.ui" line="1757"/>
         <source>Nyctalope jour</source>
         <translation>Nyctalop day</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1834"/>
+        <location filename="../mainwindow.ui" line="1857"/>
         <source>Curée générale</source>
         <translation>Scramble</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1852"/>
+        <location filename="../mainwindow.ui" line="1875"/>
         <source>Patrouilles</source>
         <translation>Patrols</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1870"/>
+        <location filename="../mainwindow.ui" line="1893"/>
         <source>Hostile</source>
         <translation>Hostile</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1929"/>
+        <location filename="../mainwindow.ui" line="1959"/>
         <source>Après 12h de voyage</source>
         <translation>After 12h travelling</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1945"/>
+        <location filename="../mainwindow.ui" line="1982"/>
         <source>Après 16h de voyage</source>
         <translation>After 16h travelling</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2017"/>
+        <location filename="../mainwindow.ui" line="2054"/>
         <source>Un</source>
         <translation>One</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2022"/>
+        <location filename="../mainwindow.ui" line="2059"/>
         <source>Deux</source>
         <translation>Two</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2279"/>
+        <location filename="../mainwindow.ui" line="2316"/>
         <source>Notes:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2298"/>
+        <location filename="../mainwindow.ui" line="2335"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Ubuntu&apos;; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Cantarell&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Ubuntu&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Cantarell&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2317"/>
+        <location filename="../mainwindow.ui" line="2354"/>
         <source>Tables et bonus des sorts</source>
         <translation>Spells tables and bonus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2330"/>
+        <location filename="../mainwindow.ui" line="2367"/>
         <source>un point d&apos;exclamation signifie qu&apos;on
 utilises pas le JR, le BO, ou/et la Table.
 
@@ -1107,12 +1111,12 @@ U Utility RD base OB TA9
 I Information !RD !OB!Table</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2357"/>
+        <location filename="../mainwindow.ui" line="2394"/>
         <source>Mort et critiques</source>
         <translation>Death and critics</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2370"/>
+        <location filename="../mainwindow.ui" line="2407"/>
         <source>Points de coups: au repos + un par heure --- non repos + un / 3 heures
 Si blessures &gt;= points de coups:
  --- mort après 6 rounds -- jets de dés chaques rounds pour charactéristiques
@@ -1139,22 +1143,22 @@ Spells:
 Secondary critic if critic above B</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2396"/>
+        <location filename="../mainwindow.ui" line="2433"/>
         <source>Appendices:</source>
         <translation>Appendices:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2410"/>
+        <location filename="../mainwindow.ui" line="2447"/>
         <source>Sorts p263-265</source>
         <translation>Spells p263/265</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2455"/>
+        <location filename="../mainwindow.ui" line="2492"/>
         <source>Critiques p266-268</source>
         <translation>Critics p266/268</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2485"/>
+        <location filename="../mainwindow.ui" line="2522"/>
         <source>Objets p286-292</source>
         <translation>Items p286/292</translation>
     </message>
@@ -1192,7 +1196,7 @@ If critic above B, secondary critic</translation>
         <translation type="vanished">merp</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2500"/>
+        <location filename="../mainwindow.ui" line="2537"/>
         <source>exit</source>
         <translation></translation>
     </message>
@@ -1355,16 +1359,24 @@ If critic above B, secondary critic</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="876"/>
-        <source>+BO sort base - bonus ag cible. A couvert: -10 à -80. Cible au centre zone effet: +20</source>
-        <translation>+OB base spell - target&apos;s ag bonus . Cover: -10 to -80. Target at the center of the zone: +20</translation>
+        <source>+BO sorts base - bonus ag cible. A couvert: -10 à -80. Cible au centre zone effet: +20</source>
+        <translation>+OB base spells - target&apos;s agility bonus. Cover: -10 to -80. Center of the zone: +20</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="883"/>
         <location filename="../mainwindow.cpp" line="890"/>
         <location filename="../mainwindow.cpp" line="897"/>
         <location filename="../mainwindow.cpp" line="904"/>
-        <source>+BO sort dirigés - bonus ag cible. A couvert: -10 à -60. Cible utilise son bouclier: -20</source>
+        <source>+BO sorts dirigés - bonus ag cible. A couvert: -10 à -60. Cible utilise son bouclier: -20</source>
         <translation>+OB directed spell - target&apos;s ag bonus. Cover: -10 to -60. Target uses shield: -20</translation>
+    </message>
+    <message>
+        <source>+BO sort base - bonus ag cible. A couvert: -10 à -80. Cible au centre zone effet: +20</source>
+        <translation type="vanished">+OB base spell - target&apos;s ag bonus . Cover: -10 to -80. Target at the center of the zone: +20</translation>
+    </message>
+    <message>
+        <source>+BO sort dirigés - bonus ag cible. A couvert: -10 à -60. Cible utilise son bouclier: -20</source>
+        <translation type="vanished">+OB directed spell - target&apos;s ag bonus. Cover: -10 to -60. Target uses shield: -20</translation>
     </message>
     <message>
         <source>+BO sort base.
