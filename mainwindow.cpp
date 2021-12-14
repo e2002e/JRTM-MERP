@@ -1339,3 +1339,9 @@ void MainWindow::on_checkBox_10_toggled(bool checked)
 {
     MainWindow::half = checked;
 }
+
+void MainWindow::on_spinBox_9_valueChanged(int arg1)
+{
+
+}
+

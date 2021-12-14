@@ -54,6 +54,8 @@ private slots:
 
     void on_checkBox_10_toggled(bool checked);
 
+    void on_spinBox_9_valueChanged(int arg1);
+
 private:
     const char *tranchantes[5][23] = {{"M","0","0","0","0","0","0","0","7","9A","10A","11B","13C","15C","17D","19D","20D","21E","23E","25E","27E","28E","30E"},\
                                 {"M","0","0","0","0","0","3","5","7A","9A","10B","12B","13B","14C","15C","17C","18D","19D","20D","22D","23E","24E","25E"},\
