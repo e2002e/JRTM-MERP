@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <QTranslator>
+#include <QScreen>
 
 int main(int argc, char *argv[])
 {

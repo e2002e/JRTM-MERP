@@ -28,8 +28,7 @@ FORMS += \
     mainwindow.ui
 
 TRANSLATIONS += \
-    languages/translations_en.ts \
-    languages/translations_fr.ts
+    languages/translations_en.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -38,8 +37,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     android/AndroidManifest.xml \
-    android/AndroidManifest.xml \
-    android/build.gradle \
     android/build.gradle \
     android/gradle.properties \
     android/gradle/wrapper/gradle-wrapper.jar \
@@ -47,7 +44,6 @@ DISTFILES += \
     android/gradlew \
     android/gradlew.bat \
     android/res/values/libs.xml \
-    android/res/values/libs.xml
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 
