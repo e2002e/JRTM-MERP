@@ -30,12 +30,15 @@ FORMS += \
 TRANSLATIONS += \
     languages/translations_en.ts
 
+VERSION = 1.1
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    CMakeLists.txt \
     android/AndroidManifest.xml \
     android/build.gradle \
     android/gradle.properties \
@@ -43,7 +46,7 @@ DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.properties \
     android/gradlew \
     android/gradlew.bat \
-    android/res/values/libs.xml \
+    android/res/values/libs.xml
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 
