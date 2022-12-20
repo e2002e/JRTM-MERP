@@ -1,3 +1,5 @@
+Please note that this version is outdated and crashes, get it from google play.
+
 # JRTM/MERP
 Helper for middle earth role playing game
 Includes every attacks in the book, spells, dynamic actions, travels and encounters.
